@@ -769,13 +769,19 @@ template {
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     color:black;
-    font-family: "Roboto";
+    font-family: "Avenir LT std";
 }
-
+@font-face {
+  font-family: "Avenir LT std";
+  src: url(../fonts/AvenirLTStd-Medium.otf);
+  }
+  * {
+    font-family: "Avenir LT std";
+  }
 button {
     border: none;
 }
@@ -808,7 +814,7 @@ h5 {
 }
 
 .color-text {
-    font-family: Avenir LT Std;
+    font-family: "Avenir LT Std";
     line-height: 20px;
     color: #F39C12;
 }
@@ -843,7 +849,7 @@ h5 {
 }
 
 .faq__green--text {
-    font-family: Avenir LT Std;
+    font-family: "Avenir LT Std";
     font-size: 34px;
     line-height: 41px;
     letter-spacing: 0.02em;
@@ -891,14 +897,14 @@ input, textarea {
 .header__top--fixed {
         display: none;
         opacity: 0;
-        position: absolute;
+        position: fixed;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 50px;
+        padding: 20px 50px;
         background: white;
-       
+       z-index: 20;
 }
 
 .header__top--fixed > div {
@@ -914,12 +920,13 @@ input, textarea {
       border-radius: 5px;
       color: #FFFFFF;
       cursor: pointer;
+      z-index: 20;
 }
 
 .header__button {
         padding: 10px 20px;
         position : absolute;
-        top: 50px;
+        top: 30px;
         right: 50px;
         background: #FFFFFF;
         border-radius: 5px;
@@ -933,7 +940,7 @@ input, textarea {
         width: 50%;
         height: 100%;
         background: linear-gradient(48.66deg, rgba(29, 59, 45, 0.66) 10.34%, rgba(59, 183, 143, 0.66) 50.69%); 
-        padding:55px;
+        padding:30px 55px;
         
     }
 
@@ -971,18 +978,29 @@ img.header__column--text {
       background: url(../../assets/images/topmenubg.png), linear-gradient(#ffffff, #ffffff);
       background-size: cover;
       background-repeat: no-repeat;
-      z-index: 10;
+      z-index: 30;
       display: none;
+      transition: width 1s ease-in-out 0.4ms;
+
+      /* opacity: 0; */
 }
 
 .header__menu--show {
       display: block;
-      transition: opacity 1s ease-in-out 0ms;
 }
 
 .header__menu--close {
-    float: right;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    width: 45px;
+    height: 45px;
+    background-position: 100% 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
     cursor: pointer;
+    background: url(../../assets/images/closeicon.svg)
 }
 
 .header__menu--wrapper {
@@ -1015,9 +1033,19 @@ img.header__column--text {
   cursor: pointer;
 }
 
+.header__menu--container a.header__menu--link:link, :active {
+    text-decoration: none;
+    /* color: #1D3B2D; */
+}
+
+.header__menu--container a.header__menu--link:hover {
+    color
+}
+
 .header__menu--container:hover {
       background: #FD5D16;
-      
+      padding: 40px 20px;
+      font-size: 30px;
 }
 .header__menu--container img {
       width: 20px;
@@ -1337,29 +1365,27 @@ img.header__menu--bg-bottom {
                             padding: 0px 10px;
                             flex: 0 auto;
                             background-color: transparent;
-                            transition-duration: 600ms;
                             color: #1d3b2d;
                             position: relative;
-                            display: inline-block;
+                            /* display: inline-block; */
                             vertical-align: top;
                             text-decoration: none;
-                            padding: 9px 30px;
                             text-align: left;
                             cursor: pointer;
                             color: #1D3B2D; 
                             max-width: 100%;
-                            height:100%;
+                          
 
                         }
 
 .description__menu--container-inner-home-tab-link-current {
-                                position: absolute;
+                                position: static;
                                 top: 0px;
                                 display: flex;
                                 width: auto;
                                 height: 10vw;
                                 min-width: 10vw;
-                                margin-top: -55px;
+                                margin-top: -85px;
                                 margin-bottom: -25px;
                                 padding-right: 24px;
                                 padding-left: 24px;
@@ -1368,6 +1394,7 @@ img.header__menu--bg-bottom {
                                 background-color: #1d3b2d;
                                 box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
                                 color: #8dc63f;
+                                /* transition: all 600ms ease-in-out 0ms; */
                             }
 
 .description__menu--container-inner-home-content {

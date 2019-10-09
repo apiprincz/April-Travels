@@ -10,8 +10,10 @@
     </title>
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> -->
     <!-- endbuild -->
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
@@ -120,27 +122,28 @@
                     </form>
 
                 </div>
-                <div class="header__menu">
-                        <img src="./assets/images/closeicon.svg" class="header__menu--close" alt="">
+                <div class="header__menu" style="transform-style: preserve-3d; transition: transform 600ms ease-in-out 0s; transform: translateX(0px) translateY(0px) translateZ(0px);">
+                        <!-- <img src="./assets/images/closeicon.svg" class="header__menu--close" style="transition: all 0.5s ease-in-out 0s;" alt=""> -->
+                        <div class="header__menu--close" style="transition: all 0.5s ease-in-out 0s;"></div>
                         <div class="header__menu--wrapper">
                             <div class="header__menu--container">
-                                <img src="assets/images/homeicon.png" alt=""> HOME
+                                <img src="assets/images/homeicon.png" alt=""> <a href="" class="header__menu--link"> HOME</a>               
                             </div>
                             <hr>
                             <div class="header__menu--container">
-                                <img src="assets/images/abouticon.png" alt=""> ABOUT US
+                                <img src="assets/images/abouticon.png" alt=""><a href="" class="header__menu--link"> ABOUT  </a>                   
                             </div>
                             <hr>
                             <div class="header__menu--container">
-                                <img src="assets/images/dealsicon.png" alt=""> DEALS &amp; OFFERS
+                                <img src="assets/images/dealsicon.png" alt=""><a href="" class="header__menu--link"> DEALS &amp; OFFERS</a>
                             </div>
                             <hr>
                             <div class="header__menu--container">
-                                <img src="assets/images/phonebookicon.png" alt=""> CONTACT US
+                                <img src="assets/images/phonebookicon.png" alt=""> <a href="" class="header__menu--link">CONTACT </a>                    
                             </div>
                             <hr>
                             <div class="header__menu--container">
-                                <img src="assets/images/faqicon.png" alt=""> FAQ'S
+                                <img src="assets/images/faqicon.png" alt=""><a href="" class="header__menu--link"> FAQ'S</a>                
                             </div>
                             <br>
                             <br>

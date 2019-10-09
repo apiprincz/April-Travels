@@ -6,6 +6,7 @@ for (let i = 0; i < togglerIcon.length; i++) {
     
     togglerIcon[i].addEventListener("click", function () {
         
+
         togglerMenu.classList.add("header__menu--show");
         
     })

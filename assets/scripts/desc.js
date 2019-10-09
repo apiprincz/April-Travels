@@ -14,7 +14,7 @@ for (let i = 0; i < descTabs.length; i++) {
             
         }
         descontent[i].classList.add("description__menu--container-inner-home-content-text-active");
-        descTabs[x].classList.add("description__menu--container-inner-home-tab-link-current");
+        descTabs[i].classList.add("description__menu--container-inner-home-tab-link-current");
 
     })
     
