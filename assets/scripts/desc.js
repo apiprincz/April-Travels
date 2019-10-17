@@ -2,6 +2,8 @@ let descTabs = document.querySelectorAll(".description__menu--container-inner-ho
 
 let descontent = document.querySelectorAll(".description__menu--container-inner-home-content-text");
 
+// let topHeader = document.querySelector(".header__top--fixed");
+
 for (let i = 0; i < descTabs.length; i++) {
     
     descTabs[i].addEventListener("click", function (e) {
@@ -19,3 +21,13 @@ for (let i = 0; i < descTabs.length; i++) {
     })
     
 }
+
+
+$(".js__description").waypoint(function (direction) {
+    if (direction == "down") {
+        $('.header__top--fixed').addClass ('js__nav--show')
+    } else {
+        $('.header__top--fixed').removeClass ('js__nav--show')
+        
+    }
+})

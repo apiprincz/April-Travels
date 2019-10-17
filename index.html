@@ -9,9 +9,14 @@
         April Travels
     </title>
     <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> -->
     <!-- endbuild -->
@@ -31,20 +36,23 @@
             </div>
             <button type="button" value="contact" class="header__fixed--button">CONTACT US</button>
         </div>
+        <div class="bg__inactive"></div>
         <header class="header">
-            <button type="button" value="contact" class="header__button">CONTACT US</button>
+            <div>
+                <button type="button" value="contact" class="header__button">CONTACT US</button>
+            </div>
             <div class="header__column">
                 <div class="header__column--description">
                     <img src="./assets/images/button.png" alt="button" class="header__column--toggler">
                     <img src="./assets/images/logo.png" alt="" class="header__column--logo">
                     <img src="./assets/images/WHITE.png" alt="" class="header__column--text">
                 </div>
-                
+
                 <div class="header__body">
                     <h2 class="header__body--hero">Explore the World<br> With Us</h2>
                     <div class="header_body--description">
                         <!-- <img src="./assets/images/travel.png" alt="Travel to your Fantasy Land in comfort"
-                            class="header__body--desscription"> -->
+                                    class="header__body--desscription"> -->
                         <p class="header__body--description">Travel to your Fantasy Land in comfort</p>
                     </div>
                     <form class="header__form">
@@ -122,43 +130,53 @@
                     </form>
 
                 </div>
-                <div class="header__menu" style="transform-style: preserve-3d; transition: transform 600ms ease-in-out 0s; transform: translateX(0px) translateY(0px) translateZ(0px);">
-                        <!-- <img src="./assets/images/closeicon.svg" class="header__menu--close" style="transition: all 0.5s ease-in-out 0s;" alt=""> -->
-                        <div class="header__menu--close" style="transition: all 0.5s ease-in-out 0s;"></div>
-                        <div class="header__menu--wrapper">
-                            <div class="header__menu--container">
-                                <img src="assets/images/homeicon.png" alt=""> <a href="" class="header__menu--link"> HOME</a>               
-                            </div>
-                            <hr>
-                            <div class="header__menu--container">
-                                <img src="assets/images/abouticon.png" alt=""><a href="" class="header__menu--link"> ABOUT  </a>                   
-                            </div>
-                            <hr>
-                            <div class="header__menu--container">
-                                <img src="assets/images/dealsicon.png" alt=""><a href="" class="header__menu--link"> DEALS &amp; OFFERS</a>
-                            </div>
-                            <hr>
-                            <div class="header__menu--container">
-                                <img src="assets/images/phonebookicon.png" alt=""> <a href="" class="header__menu--link">CONTACT </a>                    
-                            </div>
-                            <hr>
-                            <div class="header__menu--container">
-                                <img src="assets/images/faqicon.png" alt=""><a href="" class="header__menu--link"> FAQ'S</a>                
-                            </div>
-                            <br>
-                            <br>
-                            <p class="green-text" style="padding: 4px 0px">07012345678</p>
-                            <p class="green-text" style="padding: 4px 0px">07012345678</p>
-                            <p class="green-text" style="padding: 4px 0px">Info@AprilTravels.com</p>
-                            <img src="./assets/images/descbg.png" alt="" class="header__menu--bg-bottom">
-                            
+                <div class="header__menu">
+                    <!-- <img src="./assets/images/closeicon.svg" class="header__menu--close" style="transition: all 0.5s ease-in-out 0s;" alt=""> -->
+                    <div class="header__menu--close"></div>
+                    <div class="header__menu--wrapper">
+                        <div class="header__menu--container">
+                            <img src="assets/images/homeicon.png" alt=""> <a href="" class="header__menu--link">
+                                HOME</a>
                         </div>
+                        <hr>
+                        <div class="header__menu--container">
+                            <img src="assets/images/abouticon.png" alt=""><a href="" class="header__menu--link"> ABOUT
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="header__menu--container">
+                            <img src="assets/images/dealsicon.png" alt=""><a href="" class="header__menu--link"> DEALS
+                                &amp; OFFERS</a>
+                        </div>
+                        <hr>
+                        <div class="header__menu--container">
+                            <img src="assets/images/phonebookicon.png" alt=""> <a href=""
+                                class="header__menu--link">CONTACT </a>
+                        </div>
+                        <hr>
+                        <div class="header__menu--container">
+                            <img src="assets/images/faqicon.png" alt=""><a href="" class="header__menu--link"> FAQ'S</a>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="green-text" style="padding: 4px 0px">07012345678</p>
+                        <p class="green-text" style="padding: 4px 0px">07012345678</p>
+                        <p class="green-text" style="padding: 4px 0px">Info@AprilTravels.com</p>
+                        <img src="./assets/images/descbg.png" alt="" class="header__menu--bg-bottom">
+
                     </div>
+                </div>
             </div>
         </header>
+        <!-- <div class="owl-carousel owl-theme"> -->
+        <div class="header_slides owl-carousel owl-theme">
+            <div class="slide1"></div>
+            <div class="slide2"></div>
+            <div class="slide3"></div>
+        </div>
 
     </div>
-    <section class="description">
+    <section class="description js__description">
         <div class="description__mission">
             <div class="description__mission--container">
                 <img src="./assets/images/missionlg.png" alt="" class="description__mission--container-logo">
@@ -436,12 +454,12 @@
                     <div>
                         <div class="onboard__card--wrapper-icon">
                             <img class="" src="./assets/images/cardplane.png" alt="">
-                        </div><br>
+                        </div>
                         <h4 class="onboard__card--wrapper-hero green-text">Easy Booking<br>Process</h4>
                         <p class="onboard__card--wrapper-text">The process of booking is very stressfree and easy. We
                             send your confirmation immediately</p>
-                    </div>
-                    <div class="onboard__card--wrapper-long-bg"></div>
+                    </div><br><br>
+                    <div class="onboard__card--wrapper-long-bg"></div><br><br>
                     <button class="onboard__card--wrapper-long-btn orange-btn">LEARN MORE</button>
                 </div>
                 <div>
@@ -559,7 +577,7 @@
             <img src="assets/images/footerlg.png" alt="">
             <!-- </a> -->
             <h4 class="footer__overlay--text">
-                APRIL TRAVELS LTD
+                APRIL TRAVELS LTD.
             </h4>
             <h3 class="footer__overlay--hero">No better time
                 <br>to start travelling <br> but now</h3>
@@ -567,7 +585,7 @@
         </div>
         <div class="footer__main">
             <div>
-                <a href="index.html" class="footer__main--link">
+                <a href="index.html" class="footer__main--link active">
                     HOME
                 </a>
                 <a href="" class="footer__main--link">
@@ -593,19 +611,16 @@
         </div>
     </footer>
     <!-- build:js assets/scripts/App.js -->
+    <script src="assets/scripts/jquery.waypoints.min.js"></script>
     <script src="assets/scripts/header.js"></script>
     <script src="assets/scripts/faq.js"></script>
     <script src="assets/scripts/onboard.js"></script>
     <script src="assets/scripts/desc.js"></script>
     <script src="assets/scripts/input.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="assets/scripts/owl.carousel.min.js"></script>
     <!-- endbuild -->
 
-
-
 </body>
-
-
-
-
 
 </html>
