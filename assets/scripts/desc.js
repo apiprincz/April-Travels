@@ -26,8 +26,10 @@ for (let i = 0; i < descTabs.length; i++) {
 $(".js__description").waypoint(function (direction) {
     if (direction == "down") {
         $('.header__top--fixed').addClass ('js__nav--show')
+        $('.header__top--fixed').removeClass ('header__overlay')
     } else {
         $('.header__top--fixed').removeClass ('js__nav--show')
+        $('.header__top--fixed').addClass ('header__overlay')
         
     }
 })
