@@ -1,7 +1,7 @@
 let togglerIcon = document.querySelectorAll("img.header__column--toggler");
 let togglerMenu = document.querySelector(".header__menu");
 let modalCloseIcon = document.querySelectorAll(".header__menu--close");
-let bgInactive = document.querySelector(".bg__inactive")
+let bgInactive = document.querySelector(".bg__inactive");
 
 for (let i = 0; i < togglerIcon.length; i++) {
     

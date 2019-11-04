@@ -35,11 +35,16 @@
                 <img src="./assets/images/missionlg.png" alt="" class="header__column--logo">
                 <img src="./assets/images/fixedimgtext.png" alt="" class="header__column--text">
             </div>
-            <button type="button" value="contact" class="header__fixed--button">CONTACT US</button>
+            <div class="header__top--flex-right">
+                <img src="assets/images/iatalogo.png" class="header__iata" alt="">
+                <button type="button" value="contact" class="header__fixed--button">CONTACT US</button>
+            </div>
+
         </div>
         <div class="bg__inactive"></div>
         <header class="header">
-            <div>
+            <div class="header__top--flex-right">
+                <img src="assets/images/iatalogo.png" class="header__iata" alt="">
                 <button type="button" value="contact" class="header__button">CONTACT US</button>
             </div>
             <div class="header__column">
@@ -57,18 +62,19 @@
                         <p class="header__body--description">Travel to your Fantasy Land in comfort</p>
                     </div>
                     <form class="header__form">
-                        <div class="header__form--container">
+                        <div class="header__form--container header__form--full">
                             <p class="header__form--container-description">From</p>
                             <div class="header__form--container-body">
                                 <input type="text" class="header__form--container-body-text"
                                     placeholder="Kano International Airport">
-                                <div >
-                                <img src="./assets/images/dash.png" alt="" class="header__form--container-body-dash">&nbsp;
-                                <img src="./assets/images/gps.png" alt="" class="header__form--container-body-icon">
-                                </div>    
+                                <div>
+                                    <img src="./assets/images/dash.png" alt=""
+                                        class="header__form--container-body-dash">&nbsp;
+                                    <img src="./assets/images/gps.png" alt="" class="header__form--container-body-icon">
+                                </div>
                             </div>
                         </div>
-                        <div class="header__form--container">
+                        <div class="header__form--container header__form--full">
                             <p class="header__form--container-description">To</p>
                             <div class="header__form--container-body">
                                 <input class="header__form--container-body-text"
@@ -80,31 +86,36 @@
                         <div class="header__form--container">
                             <p class="header__form--container-description">Departure</p>
                             <div class="header__form--container-body">
-                                <input type="date" class="header__form--container-body-text" data-date-format="DD MMMM YYYY" value="2019-10-09"> 
+                                <input type="date" class="header__form--container-body-text"
+                                    data-date-format="DD MMMM YYYY" value="2019-10-09">
                                 <div>
-                                <img src="./assets/images/dash.png" alt="" class="header__form--container-body-dash">&nbsp;
-                                <img src="./assets/images/calendar.png" alt=""
-                                    class="header__form--container-body-icon">
+                                    <img src="./assets/images/dash.png" alt=""
+                                        class="header__form--container-body-dash">&nbsp;
+                                    <img src="./assets/images/calendar.png" alt=""
+                                        class="header__form--container-body-icon">
                                 </div>
                             </div>
                         </div>
                         <div class="header__form--container">
                             <p class="header__form--container-description">Return date</p>
                             <div class="header__form--container-body">
-                                <span class="header__form--container-body-text">20th September 2019</span>
+                                <input type="date" class="header__form--container-body-text"
+                                    data-date-format="DD MMMM YYYY" value="2019-10-09">
+                                <!-- <span class="header__form--container-body-text">20th September 2019</span> -->
                                 <div>
-                                <img src="./assets/images/dash.png" alt="" class="header__form--container-body-dash">&nbsp;
-                                <img src="./assets/images/calendar.png" alt=""
-                                    class="header__form--container-body-icon">
+                                    <img src="./assets/images/dash.png" alt=""
+                                        class="header__form--container-body-dash">&nbsp;
+                                    <img src="./assets/images/calendar.png" alt=""
+                                        class="header__form--container-body-icon">
                                 </div>
                             </div>
                         </div>
                         <div class="header__form--container">
-                            <p class="header__form--container-description">Passenger <span></span> Class
-                            </p>
+                            <div class="header__form--container-description">Passenger <span style="width: 10px; height: 10px; border-radius: 50%; background: white;"></span> Class
+                            </div>
                             <div class="header__form--container-body">
                                 <span class="header__form--container-body-text">1 Adult <span
-                                        class="header__form--blackspot"> &#46;
+                                        class="" style="width: 20px; height: 20px; border-radius: 50%; background: black;">
                                     </span> Business </span>
                                 <img src="./assets/images/select.png" alt="" class="header__form--container-select">
                                 <div>
@@ -121,8 +132,10 @@
                                 <span class="header__form--container-body-text">Business Class</span>
                                 <img src="./assets/images/select.png" alt="" class="header__form--container-select">
                                 <div>
-                                <img src="./assets/images/dash.png" alt="" class="header__form--container-body-dash">&nbsp;
-                                <img src="./assets/images/card.png" alt="" class="header__form--container-body-icon">
+                                    <img src="./assets/images/dash.png" alt=""
+                                        class="header__form--container-body-dash">&nbsp;
+                                    <img src="./assets/images/card.png" alt=""
+                                        class="header__form--container-body-icon">
                                 </div>
                             </div>
                         </div>
@@ -210,33 +223,36 @@
                         <div class="description__menu--container-inner-home-tab">
                             <a href="" data="overview"
                                 class="description__menu--container-inner-home-tab-link description__menu--container-inner-home-tab-link-current">OVERVIEW</a>
-                            <a href="" data="about" class="description__menu--container-inner-home-tab-link">ABOUT</a>
-                            <a href="" data="deals" class="description__menu--container-inner-home-tab-link">DEALS</a>
+                            <a href="" data="about" class="description__menu--container-inner-home-tab-link">PROFILE</a>
+                            <!-- <a href="" data="deals" class="description__menu--container-inner-home-tab-link">DEALS</a> -->
                         </div>
                         <div class="description__menu--container-inner-home-content">
                             <div data="overview"
                                 class="description__menu--container-inner-home-content-text description__menu--container-inner-home-content-text-active"
                                 style="opacity:1; transition:opacity 300ms ease 0s">
                                 <h5>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    April Travels Limited is one of the foremost travel management companies in Nigeria.
+                                    <br><br>
+                                    We offer travel services such as Ticketing and Reservation, Corporate Travel
+                                    Management, Packaged Tours and Ground Travel Logistics.
                                 </h5>
                             </div>
                             <div data="about" class="description__menu--container-inner-home-content-text">
                                 <h5>
-                                    2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    April Travels Limted is an Indigenous travel management company <br><br>
+                                    <span> Established by Bunmi Tejuoso</span> <br>
+                                    <span> Incorporated in 1991 </span><br>
+                                    <span> IATALicensed Member of NANTA </span><br><br>
+                                    Receipt of several awards by International Airlines operating in Nigeria
                                 </h5>
                             </div>
-                            <div data="deals" class="description__menu--container-inner-home-content-text">
+                            <!-- <div data="deals" class="description__menu--container-inner-home-content-text">
                                 <h5>
                                     3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </h5>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -245,7 +261,7 @@
             <div class="description__menu--bg"></div>
         </div>
     </section>
-    <section class="ucol">
+    <!-- <section class="ucol">
         <div class="ucol__pay">
             <h1 class="ucol__green">You</h1>
             <h3 class="ucol__text">Pay for a flight</h3>
@@ -263,7 +279,8 @@
             <h3 class="ucol__text">Have a nice time</h3>
         </div>
         </div>
-    </section>
+    </section> -->
+    
     <section class="location">
         <div class="location__hero">
             <h1 class="location__hero--text green-text">Deals &amp; Offers</h1>
@@ -352,39 +369,53 @@
         <button value="submit" class="location__view--btn orange-btn">VIEW ALL</button>
         <!-- <a href="/investments" class="button lemon-green top-padding w-button">View all</a> -->
     </section>
+    <section class="partners">
+            <div class="partners__hero">
+                <h1>Partners and Clients</h1>
+            </div>
+            <div class="partners__body">
+                <h5>Our Clients</h5>
+                <div>
+                    <img src="assets/images/sahara bg.png" alt="">
+                    <img src="assets/images/dangoteimg.png" alt="">
+                    <img src="assets/images/christlogo.png" alt="">
+                    <img src="assets/images/honeylogo.png" alt="">
+                    <img src="assets/images/petrologo.png" alt="">
+                </div>
+            </div>
+    </section>
     <div class="onboard">
         <div class="onboard__hero">
-            <h1 class="onboard__hero--text white-text">How to get onboard</h1>
+            <h1 class="onboard__hero--text white-text">Our Services Include</h1>
         </div>
         <div class="onboard__tab">
             <div class="onboard__tab--menu">
                 <a data-tab="step 1" class="onboard__tab--menu-link onboard__tab--menu-current">
-                    <div>Step 1</div>
+                    <div>Ticketing and Reservations</div>
                     <div class="onboard__tab--indicator onboard__tab--indicator-active"></div>
                 </a>
                 <a data-tab="Step 2" class="onboard__tab--menu-link">
-                    <div>Step 2</div>
+                    <div>Emergency Booking</div>
                     <div class="onboard__tab--indicator"></div>
                 </a>
                 <a data-tab="Step 3" class="onboard__tab--menu-link">
-                    <div>Step 3</div>
+                    <div>Hospitality</div>
                     <div class="onboard__tab--indicator"></div>
                 </a>
                 <a data-tab="Step 4" class="onboard__tab--menu-link">
-                    <div>Step 4</div>
+                    <div>Packaged Service</div>
                     <div class="onboard__tab--indicator"></div>
                 </a>
             </div>
             <div class="onboard__tab--content">
                 <div data-tab="Step 1" class="onboard__tab--content-pane onboard__tab--content-active">
                     <div class="onboard__tab--content-pane-wrapper">
-                        <!-- <div class="onboard__tab--content-pane-container-htgo"> -->
                         <div class="onboard__tab--content-pane-wrapper-left">
-                            <h2 class="onboard__card--wrapper-hero green-text">Create an <br>Account</h2><button
-                                href="/sign-up" class="onboard__tab--content-pane-wrapper-left-btn lemon-btn">Sign
-                                up</button>
+                            <h2 class="onboard__card--wrapper-hero green-text onboard__card--icon">Ticketing <br>and
+                                Reservation</h2><button href="/sign-up"
+                                class="onboard__tab--content-pane-wrapper-left-btn lemon-btn">CONTACT US</button>
                         </div>
-                        <div class="onboard__tab--content-pane-wrapper-right">
+                        <!-- <div class="onboard__tab--content-pane-wrapper-right">
                             <div class="onboard__tab--content-pane-wrapper-right-icon">
                                 <img src="./assets/images/onboardicon.png" alt=""
                                     class="onboard__tab--content-pane-wrapper-right-img">
@@ -394,29 +425,64 @@
                             </div>
                             <h5 class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
                                 ducimus qui blanditiis praesentium voluptatum deleniti atque.</h5>
+                        </div>  -->
+                        <div class="onboard__card--top">
+                            <p>April Travels Limited offers first-class ticketing services <br>on both local and
+                                international flights.</p>
+                            <br>
+                            <p class="onboard__card--text" style="color: black;">We are responsible for:</p>
+                            <div class="onboard__card--list">
+                                <p class="onboard__card--list-text">Online Booking (AMADEUS)</p>
+                                <p class="onboard__card--list-text">Seat reservation</p>
+                                <p class="onboard__card--list-text">Free confirmation of travel tickets</p>
+                                <p class="onboard__card--list-text">Provision of in-house reservation & ticketing desk
+                                </p>
+                                <p class="onboard__card--list-text">Executive mileage updates</p>
+                                <p class="onboard__card--list-text">Ticket rules started clearly in the reservation.</p>
+
+                            </div>
+
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
                 <div data-tab="Step 2" class="onboard__tab--content-pane">
                     <div class="onboard__tab--content-pane-wrapper">
-                        <!-- <div class="how-it-works-block"> -->
                         <div class="onboard__tab--content-pane-wrapper-left">
-                            <h2 class="onboard__card--wrapper-hero green-text">Choose<br>&amp;Plan </h2>
-                            <!-- <button href="/investments"class="button lemon-green top-padding w-button"></button> -->
+                            <h2 class="onboard__card--wrapper-hero green-text onboard__card--icon emergency">Emergency
+                                <br>Booking</h2><button href="/sign-up"
+                                class="onboard__tab--content-pane-wrapper-left-btn lemon-btn">CONTACT US</button>
                         </div>
-                        <div class="onboard__tab--content-pane-wrapper-right">
+                        <!-- <div class="onboard__tab--content-pane-wrapper-right">
                             <div class="onboard__tab--content-pane-wrapper-right-icon">
                                 <img src="./assets/images/onboardicon.png" alt=""
                                     class="onboard__tab--content-pane-wrapper-right-img">
                                 <img src="./assets/images/onboardicon1.png" alt="" class="onboard__icon--bar1">
                                 <img src="./assets/images/onboardicon2.png" alt="" class="onboard__icon--bar2">
+
                             </div>
-                            <h5 class="onboard__card--wrapper-text">bt vero eos et accusamus et iusto odio dignissimos
+                            <h5 class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
                                 ducimus qui blanditiis praesentium voluptatum deleniti atque.</h5>
-                            </h5>
+                        </div>  -->
+                        <div class="onboard__card--top">
+                            <p>
+                                We are a one-stop destination for all your travel needs. <br>
+                                understand that at times you are forced to look for last<br>
+                                minute flight tickets due to emergency at home or <br>
+                                some official meet up.
+
+                            </p>
+                            <br>
+                            <p class="onboard__card--text" style="color: black;">We offer:</p>
+                            <div class="onboard__card--list">
+                                <p class="onboard__card--list-text">Urgent flight bookings</p>
+                                <p class="onboard__card--list-text">Re-routing</p>
+                                <p class="onboard__card--list-text">24/7 in- house services</p>
+
+                            </div>
+
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
                 <div data-tab="Step 3" class="onboard__tab--content-pane">
@@ -441,27 +507,43 @@
                     </div>
                 </div>
                 <div data-tab="Step 4" class="onboard__tab--content-pane">
-                    <div class="onboard__tab--content-pane-wrapper">
-                        <!-- <div class="how-it-works-block"> -->
+                    <div class="onboard__tab--content-pane-wrapper" style="height: 60vh;">
                         <div class="onboard__tab--content-pane-wrapper-left">
-                            <h2 class="onboard__card--wrapper-hero green-text">Get Ready to Fly <br></h2>
-                            <!-- <a href="/sign-up"class="button onboard__card--wrapper-hero green top-padding w-button signed-in-hide">Get started</a> -->
+                            <h2 class="onboard__card--wrapper-hero green-text onboard__card--icon package">Packaged
+                                <br>Service</h2><button href="/sign-up"
+                                class="onboard__tab--content-pane-wrapper-left-btn lemon-btn">CONTACT US</button>
                         </div>
-                        <div class="onboard__tab--content-pane-wrapper-right">
-                            <div class="onboard__tab--content-pane-wrapper-right-icon">
-                                <img src="./assets/images/onboardicon.png" alt=""
-                                    class="onboard__tab--content-pane-wrapper-right-img">
-                                <img src="./assets/images/onboardicon1.png" alt="" class="onboard__icon--bar1">
-                                <img src="./assets/images/onboardicon2.png" alt="" class="onboard__icon--bar2">
+                        <!-- <div class="onboard__tab--content-pane-wrapper-right">
+                                    <div class="onboard__tab--content-pane-wrapper-right-icon">
+                                        <img src="./assets/images/onboardicon.png" alt=""
+                                            class="onboard__tab--content-pane-wrapper-right-img">
+                                        <img src="./assets/images/onboardicon1.png" alt="" class="onboard__icon--bar1">
+                                        <img src="./assets/images/onboardicon2.png" alt="" class="onboard__icon--bar2">
+        
+                                    </div>
+                                    <h5 class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
+                                        ducimus qui blanditiis praesentium voluptatum deleniti atque.</h5>
+                                </div>  -->
+                        <div class="onboard__card--top">
+                            <p>
+                                    April Travels Limited is the most preferred company when it comes to events for branded and exclusive packaging.
+                                     In the world of packaging, we look for that idea, contact or concept that gives you an unforgettable moment. 
+
+                            </p>
+                            <br>
+                            <p class="onboard__card--text" style="color: black;">We offer:</p>
+                            <div class="onboard__card--list">  
+                                <p class="onboard__card--list-text">Executive Card Programme</p>
+                                <p class="onboard__card--list-text">Process miles redemption and free tickets on request</p>
+                                <p class="onboard__card--list-text">Priority on seat confirmation on fully booked flights. </p>
+
                             </div>
-                            <h5 class="onboard__card--wrapper-text">Dt vero eos et accusamus et iusto odio dignissimos
-                                ducimus qui blanditiis praesentium voluptatum deleniti atque.</h5>
-                            </h5>
+
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
-            </div>-
+            </div>
         </div>
         <div class="onboard__why">
             <h2 class="onboard__why--hero white-text">Why<br><span class="green-text">April Travel?</span> </h2>
@@ -484,43 +566,48 @@
                     <div class="onboard__card--wrapper-flex">
                         <div class="onboard__card--wrapper-flex block">
                             <div class="onboard__card--wrapper-icon">
-                                <img src="./assets/images/cardcamera.png" alt="">
+                                <img src="./assets/images/customericon2.png" alt="">
                             </div>
-                            <h4 class="onboard__card--wrapper-hero green-text">Detailed Coverage</h4>
-                            <p class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
-                                ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
-                                agibfoghil</p>
+                            <h4 class="onboard__card--wrapper-hero green-text">Customer Satisfaction</h4>
+                            <p class="onboard__card--wrapper-text">We have a proven track record that shows that we can deliver on the promises above and we will deploy our full strength as an organization to ensure 
+                                that you are thoroughly satisfied with the services we would provide.</p>
                         </div>
                         <div class="onboard__card--wrapper-flex block">
                             <div class="onboard__card--wrapper-icon">
-                                <img src="./assets/images/cardbell.png" alt="">
+                                <img src="./assets/images/teamicon.png" alt="">
                             </div>
                             <h4 class="onboard__card--wrapper-hero green-text" style="transform: translateY(12px);">
-                                Detailed
-                                Notification</h4><br>
-                            <p class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
-                                ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
-                                agibfoghil</p>
+                                Amazing Team
+                            </h4><br>
+                            <p class="onboard__card--wrapper-text">
+                                    At April Travels, our core strength is our highly experienced personnel who will ensure that all your travel needs are met to your utmost satisfaction. 
+                                    We will ensure that you always receive quality service
+                            </p>
                         </div>
                     </div>
                     <div class="onboard__card--wrapper-flex">
                         <div class="onboard__card--wrapper-flex block">
                             <div class="onboard__card--wrapper-icon">
-                                <img src="./assets/images/cardhotel.png" alt="">
+                                <img src="./assets/images/timeicon.png" alt="">
                             </div><br>
-                            <h4 class="onboard__card--wrapper-hero green-text">Hotel Reservation</h4><br>
+                            <h4 class="onboard__card--wrapper-hero green-text">
+                                Unbeatable Response Time
+                            </h4><br>
                             <p class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
                                 ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
                                 agibfoghil</p>
                         </div>
                         <div class="onboard__card--wrapper-flex block">
                             <div class="onboard__card--wrapper-icon">
-                                <img src="./assets/images/cardcar.png" alt="">
+                                <img src="./assets/images/securityicon.png" alt="">
                             </div><br>
-                            <h4 class="onboard__card--wrapper-hero green-text">Transportation Booking</h4><br>
-                            <p class="onboard__card--wrapper-text">At vero eos et accusamus et iusto odio dignissimos
-                                ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
-                                agibfoghil</p>
+                            <h4 class="onboard__card--wrapper-hero green-text">
+                                Financial Security
+                            </h4><br>
+                            <p class="onboard__card--wrapper-text">
+                                    We have a NGN130 million bid bond from Zenith/Leadway insurance to run a sustainable business throughout the course of our relationship. 
+                                    The company have a proven track record that shows that we can deliver on the promises 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -532,7 +619,7 @@
         <div class="faq__body">
             <div>
                 <div class="faq__question" data="faq__open--and-close">
-                    <h5>Is the return ticket inclusive?</h5>
+                    <h5>Does the ticket fee cover return?</h5>
                     <div class="faq__question--plus">
                         <div class="faq__question--plus-icon">
                             <img src="./assets/images/plusicon.png" class="faq__plus" alt="">
@@ -546,7 +633,7 @@
             </div>
             <div>
                 <div class="faq__question" data="faq__open--and-close">
-                    <h5>Do we have to pay for accomodation?</h5>
+                    <h5>Does April Travel agency process visa to all countries?</h5>
                     <div class="faq__question--plus">
                         <div class="faq__question--plus-icon">
                             <img src="./assets/images/plusicon.png" class="faq__plus" alt="">
@@ -560,7 +647,7 @@
             </div>
             <div>
                 <div class="faq__question" data="faq__open--and-close">
-                    <h5>Who provides accommodation?</h5>
+                    <h5>Can i pay in installments?</h5>
                     <div class="faq__question--plus">
                         <div class="faq__question--plus-icon">
                             <img src="./assets/images/plusicon.png" class="faq__plus" alt="">
@@ -575,7 +662,7 @@
             </div>
             <div>
                 <div class="faq__question" data="faq__open--and-close">
-                    <h5>Can I pay in Installments?</h5>
+                    <h5>Does April Travel ask for extra charges?</h5>
                     <div class="faq__question--plus">
                         <div class="faq__question--plus-icon">
                             <img src="./assets/images/plusicon.png" class="faq__plus" alt="">
