@@ -1036,7 +1036,7 @@ position: relative;
   cursor: pointer;
 
 }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .header__iata {
     display: none;
   }
@@ -1051,7 +1051,7 @@ position: relative;
   justify-content: center;
 }
 
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .header__top--flex-right {
     right: 17px;
   }
@@ -1068,9 +1068,10 @@ position: relative;
         font-weight: bold;
         z-index: -20;
     }
-    @media only screen and (min-width:320px){
+    @media only screen and (max-width:440px){
       .header__button {
         z-index: 20;
+        padding: 10px 10px;
       }
     }
     @media only screen and (min-width:1500px){
@@ -1086,9 +1087,9 @@ position: relative;
         padding:30px 55px;
         
     }
-  @media only screen and (min-width:320px){
+  @media only screen and (max-width:440px){
       .header__column {
-        padding:15px 0px;
+        padding:29px 0px;
         
       }
     }
@@ -1132,9 +1133,9 @@ img.header__column--toggler {
 
 
 
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   img.header__column--toggler {
-    margin-right: 8vw;
+    margin-right: 5vw;
     height: 3vh;
     width: 7vw;
     /* transform: translateX(-18px); */
@@ -1160,7 +1161,7 @@ img.header__column--text {
               width: 200px;
               cursor: pointer;
           }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   img.header__column--logo {
     display: none;
   }
@@ -1185,7 +1186,7 @@ img.header__column--text {
 
     
     }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .header__body {
     width:100% ;
     padding-right: 50px;
@@ -1201,12 +1202,7 @@ img.header__column--text {
             color: #FFFFFF;
         }
 
-@media only screen and (min-width:320px){
-  .header__body--hero {
-    font-size: 35px;
-    margin-top: 23px;
-  }
-}
+
 @media only screen and (min-width:1500px){
   .header__body--hero {
     font-size: 50px;
@@ -1226,6 +1222,12 @@ img.header__column--text {
     line-height: 45px;
   }
 }
+@media only screen and (max-width:440px){
+  .header__body--hero {
+    font-size: 30px;
+    margin-top: 23px;
+  }
+}
 
 .header__body--description {
             margin-bottom: 3px;
@@ -1235,6 +1237,7 @@ img.header__column--text {
             letter-spacing: -2px;
             color: #AEF849;
         }
+
 @media only screen and (min-width:1500px){
   .header__body--description {
     font-size: 34px;
@@ -1246,6 +1249,12 @@ img.header__column--text {
       font-size: 24px;
     }
   
+}
+@media only screen and (max-width:440px){
+  .header__body--description {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 }
 
 .header__body--description img {
@@ -1331,15 +1340,16 @@ img.header__column--text {
                     color: #5C5C5C;
                     
                 }
- @media only screen and (max-width:320px) {
-  .header__form--container-body input {
-    padding: 7px 1px;
-  }
-  
-} 
+
  @media only screen and (max-width:1340px) {
   .header__form--container-body input {
     padding: 7px 16px;
+  }
+  
+} 
+@media only screen and (max-width:440px) {
+  .header__form--container-body input {
+    padding: 7px 1px;
   }
   
 } 
@@ -1361,6 +1371,11 @@ img.header__column--text {
     font-size: 24px;
   }
 }
+@media only screen and (max-width:440px){
+  .header__form--container-description {
+    padding: 1vh 0vh;
+  }
+}
                 
 
 .header__form--container-body input:last-child {
@@ -1372,6 +1387,11 @@ img.header__column--text {
   .header__form--container-body input:last-child {
     padding: 1%;
   }
+  .header__form--container-body input {
+    padding: 5px 16px;
+  }
+}
+@media only screen and (max-width:440px){
   .header__form--container-body input {
     padding: 5px 16px;
   }
@@ -1425,11 +1445,7 @@ img.header__column--text {
           font-size: 13px;
 }
 
-@media only screen and (min-width:320px){
-  .header__form--radio label{
-    font-size: 11px;
-  }
-}
+
 @media only screen and (min-width:1500px){
   .header__form--radio label{
     font-size: 24px;
@@ -1447,6 +1463,11 @@ img.header__column--text {
     font-size: 14px;
   }
 } 
+@media only screen and (max-width:440px){
+  .header__form--radio label{
+    font-size: 11px;
+  }
+}
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
@@ -1525,7 +1546,7 @@ img.header__column--text {
     display: flex;
 
 }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .description {
     flex-direction: column;
   }
@@ -1634,12 +1655,12 @@ bottom: 0px;
 
 
 .description__mission {
-        /* width:50%; */
+        width:50%;
         height:50vw;
         background: url(../../assets/images/bggate.png);
         background-size:cover;
         position: relative;
-        /* z-index: 1; */
+        z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1649,9 +1670,10 @@ bottom: 0px;
         box-shadow: 23px 0 60px 14px rgba(0, 0, 0, .2);
         
     }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .description__mission {
     height: 80vw;
+    width: 100%;
   }
 }
 
@@ -1671,7 +1693,7 @@ bottom: 0px;
             border: 5px solid #B1F751;
 
             }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .description__mission--container {
     height: 65%;
   }
@@ -1685,7 +1707,7 @@ bottom: 0px;
                 color: white;
 
             }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .description__mission--container-text {
     font-size: 12px;
     line-height: 34px;
@@ -1721,19 +1743,21 @@ bottom: 0px;
 .description__menu {
         position: relative;
         display: flex;
-        /* width: 50%; */
-        /* height: 47vw; */
+        width: 50%;
+        height: 47vw;
         padding-top: 8vw;
-        /* padding-right: 8vw; */
+        padding-right: 8vw;
         padding-bottom: 4vw;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         background-color: #f3eee7;
     }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:400px){
   .description__menu {
-      
+      width: 100%;
+      height: auto;
+      padding-right: 0px;
   }
 }
 
@@ -1754,9 +1778,10 @@ bottom: 0px;
             padding-bottom: 2vw;
             background-image: linear-gradient(135deg, #2bb673 28%, #8dc63f 72%);
         }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:440px){
   .description__menu--container {
     border-left: 14px solid #8dc63f;
+    padding-top: 4vw;
   }
 }
 
@@ -1864,7 +1889,7 @@ bottom: 0px;
                         color: #333333;
                         height: 44vh;
                     }
-@media only screen and (min-width:320px) {
+@media only screen and (max-width:440px) {
   .description__menu--container-inner-home-content {
     height: 33vh;
   }
@@ -1992,9 +2017,13 @@ bottom: 0px;
 
 .location {
     padding: 4vw 15vw 7.5vw;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5;    
+}
 
-    
+@media only screen and (max-width:440px){
+  .location {
+    padding: 4vw 21vw 7.5vw;
+  }
 }
 
 .location__view--btn {
@@ -2013,8 +2042,13 @@ bottom: 0px;
         display: flex;
         margin-bottom: 20px;
         justify-content: space-between;
-           
+        
 
+    }
+@media only screen and (max-width:440px){
+      .location__wrapper{
+        flex-wrap: wrap;
+      }
     }
 
 .location__wrapper--london {
@@ -2049,6 +2083,12 @@ bottom: 0px;
             background-size: cover;
 
         }
+@media only screen and (max-width:440px) {
+  .location__wrapper--link {
+    /* height: 50vw; */
+    display: inline-table;
+  }
+}
 @media only screen and (max-width:1060px) {
   .location__wrapper--link {
     height: 26vw;
@@ -2067,6 +2107,12 @@ bottom: 0px;
                     transform: translateY(20px);
                     font-size: 20px;
                 }
+        
+@media only screen and (max-width:440px){
+  .location__wrapper--link-top-container{
+    font-size: 11px;
+  }
+}
 @media only screen and (max-width:1060px){
   .location__wrapper--link-top-container{
     font-size: 16px;
@@ -2121,7 +2167,11 @@ bottom: 0px;
     font-size: 17px;
   }
 }
-
+@media only screen and (max-width:400px){
+.location__hero--text {
+  font-size: 1.2em;
+}
+}
 .partners__hero {
   height: 30vh;
   /* width: 100%; */
