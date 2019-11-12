@@ -27,6 +27,10 @@ for (let x = 0; x < modalCloseIcon.length; x++) {
     })
     
 }
+bgInactive.addEventListener("click", function () {
+    togglerMenu.classList.remove("header__menu--show");
+    bgInactive.classList.remove("bg__active");
+})
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
