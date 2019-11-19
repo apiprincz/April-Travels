@@ -33,7 +33,7 @@ bgInactive.addEventListener("click", function () {
 })
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owlslides").owlCarousel({
         autoplay:true,
         autoplayTimeout:5000,
         loop:true,
