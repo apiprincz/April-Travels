@@ -890,9 +890,19 @@ h5 {
     text-align: center;
     font-weight: 800;
 }
+@media only screen and (max-width:768px){
+  .faq__green--text {
+    font-size: 35px;
+  }
+}
 @media only screen and (max-width:512px){
   .faq__green--text {
     font-size: 30px;
+  }
+}
+@media only screen and (max-width:425px){
+  .faq__green--text {
+    font-size: 28px;
   }
 }
 .faq {
@@ -1437,7 +1447,7 @@ img.header__column--text {
                 color: #5C5C5C;
                 padding-right:2%;
                 position: relative;
-                padding: 16px 4px;
+                padding: 4px 4px;
             }
 
 
@@ -1456,9 +1466,14 @@ img.header__column--text {
     font-size: 14px;
   }
 } 
-@media only screen and (max-width:1012px){
+@media only screen and (max-width:1024px){
   .header__form--container-body {
     height: 50px;
+  }
+}
+@media only screen and (max-width:1024px){
+  .header__form--container-body {
+    padding: 10px 4px;
   }
 }
 @media only screen and (max-width:512px){
@@ -1499,7 +1514,7 @@ img.header__column--text {
                     /* padding: 10px 10px; */
                     background: white;
                     font-family:'Avenir LT std', sans-serif;                    
-                    font-size: 14px;
+                    font-size: 12px;
                     line-height: 17px;
                     font-weight: 500;
                     color: #5C5C5C;
@@ -1517,8 +1532,8 @@ img.header__column--text {
 }
 @media only screen and (max-width:768px){
   .header__form--container-body input {
-    
-    font-size: 17px;
+    padding: 0px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width:700px){
@@ -1623,10 +1638,15 @@ img.header__column--text {
 }
 
 .header__form--container-body-text.no__wrap {
-  padding: 0px 0px 0px 20px; 
+  padding: 0px 14px 0px 20px; 
   line-height: 18px; 
   font-size: 14px; 
   white-space: nowrap;
+}
+@media only screen and (max-width:768px){
+  .header__form--container-body-text.no__wrap {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width:512px){
   .header__form--container-body-text.no__wrap {
@@ -1643,7 +1663,7 @@ img.header__column--text {
             align-items: center;
             justify-content: space-between;
             width: 90%;
-            margin: 20px 0px 30px 0px;
+            margin: 10px 0px 10px 0px;
         }
 @media only screen and (max-width:1220px){
   .header__form--radio {
@@ -1678,7 +1698,7 @@ img.header__column--text {
             color: #FFFFFF;
             cursor: pointer;
             font-size: 10px;
-            padding: 16px 36px;
+            padding: 12px 28px;
             font-family: Avenir LT Std;
             font-style: normal;
             font-weight: 750;
@@ -1691,7 +1711,7 @@ img.header__column--text {
     font-size: 18px;
   }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (max-width:1024px){
   .header__form--submit{
     font-size: 13px;
   }
@@ -1713,8 +1733,6 @@ img.header__column--text {
   }
 }
 
-
-
 @media only screen and (max-width:1024px){
   .header__form--radio label{
     font-size: 14px;
@@ -1734,6 +1752,12 @@ img.header__column--text {
 @media only screen and (max-width:600px){
   .header__form--radio label{
     font-size: 15px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width:425px){
+  .header__form--radio label{
+    font-size: 13px;
     padding: 0px;
   }
 }
@@ -2020,15 +2044,15 @@ bottom: 0px;
 }
 @media only screen and (max-width:512px){
   .description__mission--container {
-    height: 65%;
+    height: 85%;
   }
   .description__mission--container-logo {
     height: 20px;
   } 
 }
-@media only screen and (max-width:512px){
+@media only screen and (max-width:370px){
   .description__mission--container{
-    height: 85%;
+    height: 90%;
   }
 }
 
@@ -2062,7 +2086,7 @@ bottom: 0px;
 }
 @media only screen and (max-width:768px){
   .description__mission--container-text {
-    font-size: 32px;
+    font-size: 23px;
     line-height: 38px;
   }
 }
@@ -2082,6 +2106,12 @@ bottom: 0px;
   .description__mission--container-text {
     font-size: 15px;
     line-height: 21px;
+  }
+}
+@media only screen and (max-width:370px){
+  .description__mission--container-text {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 .description__mission--container-text-red {
@@ -2152,7 +2182,7 @@ bottom: 0px;
         }
 @media only screen and (max-width:512px){
   .description__menu--container {
-    border-left: 14px solid #8dc63f;
+    /* border-left: 14px solid #8dc63f; */
     padding-top: 4vw;
   }
 }
@@ -2317,6 +2347,7 @@ bottom: 0px;
                             color: #333333;
                             font-size: 19px;
                             line-height: 22px;
+                            text-align: justify;
                   
                         }
 @media only sceen and (max-width:1024px){
@@ -2327,17 +2358,18 @@ bottom: 0px;
     font-size: 17px;
   }
 }
-@media only sceen and (max-width:768px){
+@media only screen and (max-width:768px){
   .description__menu--container-inner-home-content-text {
     padding: 64px 0px;
     letter-spacing: 1px;
   }
 }
-@media only sceen and (max-width:512px){
+@media only screen and (max-width:512px){
   .description__menu--container-inner-home-content-text {
     font-size: 13px;
   }
 }
+
 .description__menu--container-inner-home-content-text span::before {
   content: url(../../assets/images/greendot.png);
   transform: translateY(-20px);
@@ -2452,11 +2484,7 @@ bottom: 0px;
     padding: 4vw 7vw 7.5vw;
   }
 }
-@media only screen and (max-width:640px){
-  .location {
-    padding: 4vw 12vw 7.5vw;
-  }
-}
+
 .location__hero--text {
   font-family: Avenir LT Std;
   font-size: 50px;
@@ -2545,6 +2573,7 @@ background: none;
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
+    height: 34vh;
   }
 }
 
@@ -2584,6 +2613,11 @@ font-weight: 700;
       line-height: 40px;
   }
 }
+@media only screen and (max-width:425px){
+  .location__wrapper--link-top-container-text {
+      font-size: 16px;
+  }
+}
 .location__wrapper--link-top-preview {
                     font-family: "Avenir LT Std";
                     font-size: 50px;
@@ -2604,16 +2638,22 @@ font-weight: 700;
     font-size: 40px;
   }
 }
-@media only screen and (max-width:640px){
-  .location__wrapper--link-top-preview span {
-    line-height: 55px;
-    font-size: 33px;
-  }
-}
+
+
 
 .location__wrapper--link-top-preview p {
   font-family: "Avenir LT Std";
   font-size: 19px;
+}
+@media only screen and (max-width:640px){
+  .location__wrapper--link-top-preview p{
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width:375px){
+  .location__wrapper--link-top-preview p{
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width:1060px){
   .location__wrapper--link-top-preview {
@@ -2648,6 +2688,16 @@ color: #FFFFFF;
   .location__wrapper--link-bottom p  {
     font-size: 30px;
     line-height: 50px;
+  }
+}
+@media only screen and (max-width:470px){
+  .location__wrapper--link-bottom p  {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width:375px){
+  .location__wrapper--link-bottom p  {
+    font-size: 22px;
   }
 }
 
@@ -2694,6 +2744,11 @@ color: #FFFFFF;
   font-size: 2.2em;
 }
 }
+@media only screen and (max-width:425px){
+.location__hero--text {
+  font-size: 1.6em;
+}
+}
 .partners__hero {
   /* height: 50vh; */
   /* width: 100%; */
@@ -2710,34 +2765,56 @@ color: #FFFFFF;
 
 }
 
-@media only screen and (max-width:1012px){
+@media only screen and (max-width:1024px){
   .partners__hero {
     height: 40vh;
     font-size: 16px;
     padding: 70px 48px;
   }
 }
+@media only screen and (max-width:600px){
+  .partners__hero {
+    height: 32vh;
+    
+  }
+}
 @media only screen and (max-width:512px){
   .partners__hero {
     height: 10vh;
     font-size: 16px;
-    padding: 70px 48px;
+  }
+}
+@media only screen and (max-width:375px){
+  .partners__hero {
+    padding: 70px 35px;
   }
 }
 .partners__hero h1 {
   margin: 0px;
 }
 
-@media only screen and (max-width:1012px){
+@media only screen and (max-width:1024px){
   .partners__hero h1 {
     font-size: 50px;
     line-height: 183px;
+  }
+}
+@media only screen and (max-width:600px){
+  .partners__hero h1 {
+    font-size: 40px;
+    
   }
 }
 @media only screen and (max-width:512px){
   .partners__hero h1 {
     font-size: 28px;
     line-height: 33px;
+  }
+}
+@media only screen and (max-width:375px){
+  .partners__hero h1 {
+    font-size: 26px;
+    
   }
 }
 
@@ -2776,6 +2853,17 @@ letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.owl__image{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl__image img {
+    width: 80%;
+
 }
 
 .onboard {
@@ -3395,7 +3483,7 @@ letter-spacing: 1px;
                     height:22vh;
                     background: url(../../assets/images/cardplanebg.png);
                     background-repeat: no-repeat; 
-                    background-size: cover;
+                    background-size: contain;
                     margin: 40px 0px;
                     
                 
@@ -3412,7 +3500,7 @@ letter-spacing: 1px;
     height: 11vh;
   }
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:600px){
   .onboard__card--wrapper-long-bg {
     height: 14vh;
   }
@@ -3515,6 +3603,16 @@ color: #1D3B2D;
     padding: 2.5vw 16vw 260px;
   }
 }
+@media only screen and (max-width:768px){
+  .faq {
+    padding: 2.5vw 12vw 260px;
+  }
+}
+@media only screen and (max-width:425px){
+  .faq {
+    padding: 2.5vw 9vw 260px;
+  }
+}
 
 /* Faq standalone section begins here  */
 
@@ -3591,11 +3689,27 @@ color: #1D3B2D;
         line-height: 23px;
 }
 
+@media only screen and (max-width:600px){
+  .faq__question h5 {
+    font-size: 17px;
+  }
+}
 @media only screen and (max-width:512px){
   .faq__question h5 {
     font-size: 15px;
   }
 }
+@media only screen and (max-width:425px){
+  .faq__question h5 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:375px){
+  .faq__question h5 {
+    font-size: 12px;
+  }
+}
+
 .faq__question--plus {
             position: relative;
             display: flex;
@@ -3639,9 +3753,14 @@ color: #1D3B2D;
     padding: 1px 13vw 3vw;
     background-color: #1d3b2d;
 }
-@media only screen and (max-width:512px){
+@media only screen and (max-width:660px){
   .footer {
-    padding: 1px 6vw 3vw;
+    padding: 1px 10vw 3vw;
+  }
+}
+@media only screen and (max-width:600px){
+  .footer {
+    padding: 1px 7vw 3vw;
   }
 }
 
@@ -3668,9 +3787,15 @@ color: #1D3B2D;
 }
 @media only screen and (max-width:512px){
   .footer__overlay {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
+    background: white;
+  }
+}
+@media only screen and (max-width:340px){
+  .footer__overlay {
+    padding: 3vw 4vw;
   }
 }
 
@@ -3688,6 +3813,16 @@ color: #1D3B2D;
             font-weight: 300;
             color: #333333;
         }
+@media only screen and (max-width:768px){
+  .footer__overlay h3 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width:600px){
+  .footer__overlay h3 {
+    font-size: 24px;
+  }
+}
 
 .footer__overlay h4 {
             font-family: Arial, Helvetica, sans-serif;
@@ -3707,6 +3842,8 @@ color: #1D3B2D;
 @media only screen and (max-width:512px){
   .footer__overlay--text::before {
     content: url(../../assets/images/footerresp.png);
+    display: block;
+    text-align: center;
   }
   .footer__overlay--text h4::before {
     content: url(../../assets/images/footerlg.png);
@@ -3756,10 +3893,21 @@ color: #FFFFFF;
             color: white;
             font-size: 14px;
         }
+@media only screen and (max-width:768px){
+  .footer__main--link:link, .footer__main--link:visited {
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width:700px){
+  .footer__main--link:link, .footer__main--link:visited {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width:512px){
   .footer__main--link:link, .footer__main--link:visited {
-    font-size: 11px;
-    line-height: 43px;
+    font-size: 13px;
+    line-height: 32px;
+    padding-top: 0px;
   }
 }
 .footer__main--link.active{
@@ -3807,6 +3955,11 @@ color: #FFFFFF;
         font-size: 14px;
         line-height: 16px;
     }
+@media only screen and (max-width:512px){
+  .footer__copyright {
+    margin-left: 0px;
+  }
+}
 .footer__copyright--text {
     font-family: Arial;
     font-size: 14px;
@@ -3816,8 +3969,13 @@ color: #FFFFFF;
 
 @media only screen and (max-width:512px){
   .footer__copyright--text {
-    text-align: center;
+    text-align: left;
     font-size: 12px;
+  }
+}
+@media only screen and (max-width:375px){
+  .footer__copyright--text {
+    font-size: 10px;
   }
 }
 
