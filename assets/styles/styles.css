@@ -791,11 +791,7 @@ html {
     src: url(../fonts/AvenirLTStd-Book.otf);
     font-weight: 300; 
   }
-  @font-face {
-    font-family: "Avenir LT std";
-    src: url(../fonts/AvenirLTStd-BookOblique.otf);
-    font-weight: 400; 
-  }
+  
   @font-face {
     font-family: "Avenir LT std";
     src: url(../fonts/AvenirLTStd-Medium.otf);
@@ -803,8 +799,8 @@ html {
     }
   @font-face {
     font-family: "Avenir LT std";
-    src: url(../fonts/AvenirLTStd-MediumOblique.otf);
-    font-weight: 600;
+    src: url(../fonts/AvenirLTStd-Black.otf);
+    font-weight: 700;
     }
 
     @font-face {
@@ -1173,7 +1169,7 @@ img.header__nanta {
     }
 
 .header__column {
-        width: 50%;
+        width: 54%;
         height: 100%;
         background: linear-gradient(48.66deg, rgba(29, 59, 45, 0.66) 10.34%, rgba(59, 183, 143, 0.80) 70.69%); 
         padding:20px;
@@ -1261,12 +1257,12 @@ img.header__column--toggler {
 img.header__column--logo{
                 margin-right:20px;
                 width: 40px;
-                height: 34px;
+                height: 30px;
                 cursor: pointer;
             }
 img.header__column--text {
-              width: 25px;
-              height: 54px;
+              width: 256px;
+              height: 30px;
               cursor: pointer;
           }
 @media only screen and (max-width:1024px){
@@ -1335,11 +1331,11 @@ img.header__column--text {
 }
 
 .header__body--hero {
-            margin: 40px 0px 16px 0px;
+            margin: 80px 0px 16px 0px;
             font-family: "Avenir LT Std";
             font-size: 50px;
             line-height: 50px;
-            letter-spacing: -2px;
+            letter-spacing: -3px;
             color: #FFFFFF;
             font-weight: 800;
         }
@@ -1394,7 +1390,7 @@ img.header__column--text {
             margin-bottom: 3px;
             font-family: 'avenir 07', sans-serif;
             font-size: 26px;
-            line-height: 32px;
+            line-height: 36px;
             letter-spacing: -1px;
             color: #AEF849;
         }
@@ -1551,6 +1547,7 @@ img.header__column--text {
                 /* padding: 1vh; */
                 font-size: 14px;
                 font-weight: normal;
+                line-height: 18px;
 }
 
 
@@ -1592,7 +1589,7 @@ img.header__column--text {
                     /* padding: 10px 10px; */
                     background: white;
                     font-family:'Avenir LT std', sans-serif;                    
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 17px;
                     font-weight: 500;
                     color: #5C5C5C;
@@ -1716,10 +1713,11 @@ img.header__column--text {
 }
 
 .header__form--container-body-text.no__wrap {
-  padding: 0px 14px 0px 20px; 
+  padding: 0px 35px 0px 20px; 
   line-height: 18px; 
-  font-size: 12px; 
+  font-size: 14px; 
   white-space: nowrap;
+  font-weight: 500;
 }
 @media only screen and (max-width:1024px){
   .header__form--container-body-text.no__wrap {
@@ -1746,7 +1744,7 @@ img.header__column--text {
             align-items: center;
             justify-content: space-between;
             width: 90%;
-            margin: 10px 0px 20px 0px;
+            margin: 10px 0px 36px 0px;
         }
 @media only screen and (max-width:1220px){
   .header__form--radio {
@@ -1806,7 +1804,7 @@ img.header__column--text {
 }
 
 .header__form--radio label {
-          font-size: 13px;
+          font-size: 15px;
 }
 
 
@@ -1883,6 +1881,7 @@ img.header__column--text {
     display: inline-block;
     color: #FFFFFF;
     font-family: "Avenir LT std";
+    font-weight: 100;
 }
 
 
@@ -2073,7 +2072,7 @@ bottom: 0px;
 
 
 .description__mission {
-        width:50%;
+        width:60%;
         /* height:50vw; */
         background: url(../../assets/images/bggate.png);
         background-size:cover;
@@ -2102,14 +2101,14 @@ bottom: 0px;
             display: flex;
             flex-direction: column;
             max-width: 450px;
-            padding: 2vw 2vw 5vw;
+            padding: 5vw 2vw 5vw;
             justify-content: space-between;
             align-items: center;
-            border-style: solid;
+            /* border-style: solid;
             border-width: 5px;
             /* background: url(/app//assets//images/missionlg.png); */
-            background: linear-gradient(180.08deg, rgba(141, 198, 63, 0.1534) 0.1%, rgba(108, 192, 80, 0.26) 99.9%);
-            border: 5px solid #B1F751;
+            /* background: linear-gradient(180.08deg, rgba(141, 198, 63, 0.1534) 0.1%, rgba(108, 192, 80, 0.26) 99.9%);
+            border: 5px solid #B1F751; */ */
 
             }
 @media only screen and (max-width:1024px){
@@ -2232,9 +2231,9 @@ bottom: 0px;
         display: flex;
         width: 50%;
         /* height: 47vw; */
-        padding-top: 8vw;
-        padding-right: 8vw;
-        padding-bottom: 4vw;
+        padding-top: 6vw;
+        padding-right: 2vw;
+        padding-bottom: 7vw;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -2275,7 +2274,7 @@ bottom: 0px;
 .description__menu--container-inner {
                 position: relative;
                 display: flex;
-                padding: 5vw 3vw 3vw 4vw;
+                padding: 5vw 6vw 3vw 6vw;
                 flex-direction: column;
                 justify-content: center;
                 background-color: #f3eee7;
@@ -2354,8 +2353,8 @@ bottom: 0px;
                                 position: static;
                                 top: 0px;
                                 display: flex;
-                                width: auto;
-                                /* height: 10vw; */
+                                width: 145px;
+                                height: 144px;
                                 min-width: 10vw;
                                 margin-top: -85px;
                                 /* margin-bottom: -25px; */
@@ -2366,7 +2365,7 @@ bottom: 0px;
                                 background-color: #1d3b2d;
                                 box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
                                 color: #8dc63f;
-                                font-size: 14px;
+                                font-size: 11px;
                                 /* transition: all 600ms ease-in-out 0ms; */
                             }
 @media only screen and (max-width:512px) {
@@ -2405,6 +2404,7 @@ bottom: 0px;
                         line-height: 22px;
                         color: #333333;
                         height: 48vh;
+                        padding: 34px 0px;
                     }
 @media only screen and (max-width:512px) {
   .description__menu--container-inner-home-content {
@@ -2432,7 +2432,9 @@ bottom: 0px;
                             color: #333333;
                             font-size: 19px;
                             line-height: 22px;
-                            text-align: justify;
+                            /* text-align: justify; */
+                            letter-spacing: 0.6px;
+                            font-weight: 300;
                   
                         }
 @media only sceen and (max-width:1024px){
@@ -2957,10 +2959,10 @@ letter-spacing: 1px;
 }
 
 .onboard {
-    padding: 7.5vw 10vw 10vw 10vw;
+    padding: 7.5vw 4vw 10vw 10vw;
     background-color: #2bb673;
     background-image: url(../../assets/images/onboardbg.png);
-    background-position: right top;
+    background-position: -19% 0%;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -3380,7 +3382,7 @@ letter-spacing: 1px;
                 text-decoration: none;
                 text-align: left;
                 cursor: pointer;
-                border-radius: 10px;
+                /* border-radius: 10px; */
 
             }
 @media only screen and (max-width:1024px){
