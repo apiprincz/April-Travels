@@ -3039,7 +3039,7 @@ letter-spacing: 1px;
 .onboard__tab--content-pane {
                 position: relative;
                 display: none;
-                padding-left: 18vw;
+                padding-left: 19vw;
             }
 
 @media only screen and (max-width:720px){
@@ -3057,7 +3057,7 @@ letter-spacing: 1px;
                     justify-content: space-between;
                     align-items: center;
                     background-color: rgba(177, 221, 206, .5);
-                    height: 426px;
+                    height: 370px;
                     border-radius: 10px;
                 }
 .onboard__tab--content-pane-wrapper.minor {
@@ -3164,7 +3164,7 @@ letter-spacing: 1px;
   }
 
  
-}
+
 .onboard__card--list{
       font-family: Avenir LT Std;
       font-size: 15px;
@@ -3173,6 +3173,7 @@ letter-spacing: 1px;
       /* width: 70%; */
       right: 0;
       padding: 10px 80px;
+      padding-left: 84px;
       
 }
 @media only screen and (max-width:1024px){
@@ -3198,8 +3199,9 @@ letter-spacing: 1px;
 }
 .onboard__card--text.media__font {
   color: #5c5c5c; 
-  font-size: 18px; 
+  font-size: 15px; 
   font-weight: 700;
+  line-height: 40px;
 }
 @media only screen and (max-width:1024px){
   .onboard__card--text.media__font{
@@ -3211,7 +3213,7 @@ letter-spacing: 1px;
 
   font-family: Avenir LT Std;
   font-size: 15px;
-  line-height: 40px;
+  line-height: 30px;
   color: #5C5C5C;
 
 }
@@ -3403,17 +3405,44 @@ letter-spacing: 1px;
     padding: 23px 1vw 32px;
   }
 }
+.onboard__tab--indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  padding-left: 30px;
+  justify-content: center;
+  font-family: Avenir LT Std;
+  font-size: 19px;
+  line-height: 23px;
 
-.onboard__tab--menu-current {
+}
+
+@media only screen and (max-width:1024px){
+.onboard__tab--indicator {
+  text-align: left;
+}
+}
+@media only screen and (max-width:768px){
+.onboard__tab--indicator {
+  text-align: initial;
+}
+}
+@media only screen and (max-width:512px){
+.onboard__tab--indicator {
+  font-size: 14px;
+}
+}
+
+.onboard__tab--menu-link.onboard__tab--menu-current {
                 flex: 1;
                 background-color: transparent;
                 color: #8dc63f;
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 30px;
                 transition: all 0.6s ease-in-out 0s;
                 text-align: center;
-            
-            }
+                        }
 
 @media only screen and (max-width:1024px){
   .onboard__tab--menu-current {
@@ -3446,34 +3475,7 @@ letter-spacing: 1px;
     width: 100%;
   }
 }
-.onboard__tab--indicator {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    padding-left: 30px;
-    justify-content: center;
-    font-family: Avenir LT Std;
-    font-size: 19px;
-    line-height: 23px;
 
-}
-
-@media only screen and (max-width:1024px){
-  .onboard__tab--indicator {
-    text-align: left;
-  }
-}
-@media only screen and (max-width:768px){
-  .onboard__tab--indicator {
-    text-align: initial;
-  }
-}
-@media only screen and (max-width:512px){
-  .onboard__tab--indicator {
-    font-size: 14px;
-  }
-}
 
 .onboard__why {
         padding-top: 6vw;
