@@ -895,12 +895,12 @@ h5 {
 
 .faq__green--text {
     font-family: "Avenir LT Std";
-    font-size: 41px;
+    font-size: 34px;
     line-height: 41px;
     letter-spacing: 0.02em;
     color: #2BB673;
     text-align: center;
-    font-weight: 800;
+    
 }
 @media only screen and (max-width:768px){
   .faq__green--text {
@@ -1261,8 +1261,8 @@ img.header__column--logo{
                 cursor: pointer;
             }
 img.header__column--text {
-              width: 256px;
-              height: 30px;
+              width: 266px;
+              height: 66px;
               cursor: pointer;
           }
 @media only screen and (max-width:1024px){
@@ -2563,7 +2563,7 @@ bottom: 0px;
 
 
 .location {
-    padding: 4vw 15vw 7.5vw;
+    padding: 4vw 13vw 10.5vw;
     /* background-color: #f5f5f5;     */
 }
 
@@ -2580,8 +2580,8 @@ bottom: 0px;
 .location__hero--text {
   font-family: Avenir LT Std;
   font-size: 50px;
-  line-height: 60px;
-  font-weight: 800;
+  line-height: 120px;
+  font-weight: 700;
 
 }
 .location__location .location__hero--text {
@@ -2596,6 +2596,17 @@ line-height: 60px;
 color: #5C5C5C;
 padding-bottom: 30px;
 background: none;
+}
+.location__view--btn {
+  font-family: Avenir LT Std;
+font-size: 11px;
+line-height: 13px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+background: #FF5E16;
+border-radius: 5px;
+padding: 14px 55px;
+margin: 20px 0px;
 }
 
 @media only screen and (min-width:1500px){
@@ -2638,9 +2649,9 @@ background: none;
             position: relative;
             display: flex;
             overflow: hidden;
-            width: 34vw;
+            width: 35.4vw;
             height: 22vw;
-            padding: 2vw;
+            padding: 2vw 2vw 1vw;
             flex-direction: column;
             justify-content: space-between;
             border-radius: 10px;
@@ -2696,7 +2707,7 @@ background: none;
   font-family: "Avenir LT Std";
 font-size: 15px;
 line-height: 16px;
-font-weight: 700;
+font-weight: 300;
 }
 
 @media only screen and (max-width:768px){
@@ -2736,6 +2747,7 @@ font-weight: 700;
 .location__wrapper--link-top-preview p {
   font-family: "Avenir LT Std";
   font-size: 19px;
+  font-weight: 300;
 }
 @media only screen and (max-width:640px){
   .location__wrapper--link-top-preview p{
@@ -2767,7 +2779,7 @@ font-weight: 700;
 .location__wrapper--link-bottom p {
   font-family: Avenir LT Std;
 font-size: 24px;
-line-height: 29px;
+line-height: 47px;
 color: #FFFFFF;
 }
 
@@ -2852,7 +2864,7 @@ color: #FFFFFF;
   font-weight: 800;
   font-size: 40px;
   line-height: 24px;
-  padding: 180px 60px 100px 60px;
+  padding: 180px 60px 120px 60px;
   text-align: right;
 
 }
@@ -2922,11 +2934,13 @@ color: #FFFFFF;
 .partners__body h5 {
   font-family: Avenir LT Std;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 40px;
 line-height: 22px;
 letter-spacing: 1px;
+padding: 30px 0px;
 }
+
 
 @media only screen and (max-width:512px){
   .partners__body h5 {
@@ -3039,7 +3053,7 @@ letter-spacing: 1px;
 .onboard__tab--content-pane {
                 position: relative;
                 display: none;
-                padding-left: 19vw;
+                padding-left: 23vw;
             }
 
 @media only screen and (max-width:720px){
@@ -3069,7 +3083,7 @@ letter-spacing: 1px;
   }
 }
 .onboard__card--top {
-          padding: 40px 0px 0px 70px;
+          padding: 40px 0px 0px 50px;
           position: absolute;
           height: 100%;
           width: 100%;
@@ -3253,7 +3267,7 @@ letter-spacing: 1px;
   }
 }
 .onboard__tab--content-pane-wrapper-left {
-                  transform: translateX(-110px);
+                  transform: translateX(-135px);
 }
 
 @media only screen and (max-width:1024px){
@@ -3278,7 +3292,7 @@ letter-spacing: 1px;
                         font-family: 'Avenir LT Std', sans-serif;
                         font-size: 34px;
                         line-height: 47px;
-                        font-weight: 800;
+                        font-weight: 700;
                         /* margin-left:-66px; */
                         color: #1D3B2D;
 
@@ -3373,7 +3387,7 @@ letter-spacing: 1px;
 
 .onboard__tab--menu-link {
                 padding: 40px 1vw 40px;
-                flex: 0 0 auto;
+                flex: 1;
                 background-color: rgba(0, 0, 0, .7);
                 font-family: 'Avenir 07', sans-serif;
                 color: #fff;
@@ -3414,7 +3428,7 @@ letter-spacing: 1px;
   justify-content: center;
   font-family: Avenir LT Std;
   font-size: 19px;
-  line-height: 23px;
+  line-height: 37px;
 
 }
 
@@ -3434,15 +3448,19 @@ letter-spacing: 1px;
 }
 }
 
-.onboard__tab--menu-link.onboard__tab--menu-current {
+.onboard__tab--menu-current .onboard__tab--indicator {
                 flex: 1;
                 background-color: transparent;
                 color: #8dc63f;
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 27px;
+                line-height: 47px;
                 transition: all 0.6s ease-in-out 0s;
                 text-align: center;
                         }
+.onboard__tab--menu-current {
+  background-color: transparent;
+  flex: 1;
+}
 
 @media only screen and (max-width:1024px){
   .onboard__tab--menu-current {
@@ -3460,7 +3478,7 @@ letter-spacing: 1px;
 .onboard__tab--menu-current .onboard__tab--indicator::after {
       content: "";
       display: inline-block;
-      width: 30px;
+      width: 45px;
       height: 4px;
       margin-top: 5px;
       background-color: #8dc63f;
@@ -3478,8 +3496,8 @@ letter-spacing: 1px;
 
 
 .onboard__why {
-        padding-top: 6vw;
-        padding-bottom: 3vw;
+        padding-top: 7vw;
+        padding-bottom: 4vw;
     }
 
 .onboard__why--hero {
@@ -3574,9 +3592,6 @@ letter-spacing: 1px;
   
 }
 
-.onboard__card--wrapper-long h4 {
-                    margin: 10px 0px;
-                }
 
 .onboard__card--wrapper-long-bg {
                     height:22vh;
@@ -3649,6 +3664,7 @@ color: #1D3B2D;
                 font-size: 14px;
                 line-height: 18px;
                 text-align: justify;
+                padding: 10px 0px;
             }
 
 .onboard__card--wrapper-flex {
@@ -3686,6 +3702,18 @@ color: #1D3B2D;
   .onboard__card--wrapper-flex .block {
       padding: 9vw 4vw;
   }
+}
+
+.onboard__card--wrapper-flex .block .ownblock {
+  transform: translateY(-53px);
+}
+.onboard__card--wrapper-flex .block .ownblock h4 {
+  font-size: 22px;
+  
+}
+.onboard__card--wrapper-flex .block .ownblock .onboard__card--wrapper-text {
+  transform: translateY(18px);
+  
 }
 
 .faq {
@@ -3738,6 +3766,7 @@ color: #1D3B2D;
 
 .faq__body {
         width: 100%;
+        padding: 20px 0px;
     }
 
     .faq__body--container {
@@ -3786,6 +3815,7 @@ color: #1D3B2D;
         font-family: Avenir LT Std;
         font-size: 19px;
         line-height: 23px;
+        font-weight: 400;
 }
 
 @media only screen and (max-width:600px){
@@ -3832,6 +3862,7 @@ color: #1D3B2D;
         transform: none;
         color: #5C5C5C;
         width: 100%;
+        font-weight: 300;
     }
 .faq__display {
         display: block;
@@ -3849,7 +3880,7 @@ color: #1D3B2D;
 
 .footer {
     position: relative;
-    padding: 1px 13vw 3vw;
+    padding: 1px 11vw 3vw;
     background-color: #1d3b2d;
 }
 @media only screen and (max-width:660px){
@@ -3869,7 +3900,7 @@ color: #1D3B2D;
 
 .footer__overlay {
         margin-top: -200px;
-        padding: 3vw 7vw;
+        padding: 2vw 8vw 5vw;
         border-radius: 10px;
         background: url(../../assets/images/footerimg.png);
         background-color: #f0f0f0;
@@ -3908,11 +3939,11 @@ color: #1D3B2D;
           }
         }
 .footer__overlay h3 {
-            margin-top: 16px;
-            margin-bottom: 16px;
+            margin-top: 25px;
+            margin-bottom: 25px;
             font-family: 'Avenir 07', sans-serif;
             font-size: 30px;
-            line-height: 32px;
+            line-height: 38px;
             font-weight: 300;
             color: #333333;
         }
