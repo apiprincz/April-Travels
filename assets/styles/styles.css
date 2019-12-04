@@ -949,6 +949,7 @@ input, textarea {
     padding: 10px;
     line-height: 22px;
     letter-spacing: 0.02em;
+    font-size: 12px;
 
 }
 
@@ -4479,8 +4480,16 @@ color: #FFFFFF;
         display: flex;
         transform: translateY(-120px);
 
+        
 }
 
+@media only screen and (max-width:768px){
+
+.contact {
+  transform: translateY(-85px);
+  width: 86%;
+}
+}
 
 .contact__bg {
         height: 80vh;
@@ -4491,6 +4500,7 @@ color: #FFFFFF;
         background-size: cover;
     }
 
+    
 .contact__bg > div {
             text-align: center;
         }
@@ -4502,6 +4512,15 @@ color: #FFFFFF;
             letter-spacing: 0.02em;
             color: #FFFFFF;
         }
+
+@media only screen and (max-width:768px){
+  .contact__bg h1 {
+    line-height: 28px;
+  }
+  .contact__desc {
+    font-size: 16px;
+  }
+}
 
 .contact__bg--2 {
           background: url(../../assets/images/contactbg2.png);
@@ -4517,7 +4536,11 @@ color: #FFFFFF;
         flex-direction: column;
         padding: 3vw 7vw;
     }
-
+@media only screen and (max-width:640px){
+  .contact__form {
+    padding: 3vw 6vw;
+  }
+}
 .contact__form input {
             background: #D8D8D8;
             height: 6vh;
@@ -4534,7 +4557,12 @@ color: #FFFFFF;
             letter-spacing: 0.02em;
             color: #000000;
         }
-
+@media only screen and (max-width:640px){
+  .contact__form label {
+    font-size: 16px;
+    line-height: 13px;
+  }
+}
 .contact__form button {
             width: 200px;
         }
@@ -4543,18 +4571,62 @@ color: #FFFFFF;
         background: #1D3B2D;
         padding: 10vw 10vw 2vw 4vw;
     }
-
+@media only screen and (max-width:640px){
+  .contact__info{
+    padding: 10vw 5vw 2vw 4vw;
+  }
+}
 .contact__info > div {
             display: flex;
             align-items:center;
+            justify-content: flex-start;
             margin-bottom:2vh;
             color:white;
             /* font-family: Avenir LT Std; */
             font-size: 14px;
             line-height: 17px;
             letter-spacing: 0.02em;
+            font-weight: 100;
         }
+@media only screen and (max-width:640px){
+  .contact__info > div {
+    font-size: 12px;
+  }
+}
+.contact__email::before {
+  content: url(../../assets/images/mailicon.png);
+  padding-right: 20px;
 
+}
+.contact__phone::before {
+  content: url(../../assets/images/callicon.png);
+  padding-right: 20px;
+}
+.contact__location::before {
+  content: url(../../assets/images/geoicon.png);
+  padding-right: 20px;
+}
+.contact__sub--desc{
+  line-height: 17px; 
+  color: white;
+  font-family: Avenir LT Std;
+  font-size: 14px;
+}
+
+@media only screen and (max-width:640px){
+  .contact__sub--desc {
+    font-size: 12px;
+  }
+}
+.contact__medias {
+  display: flex; 
+  justify-content: space-between; 
+  /* width: 50%;  */
+  padding-top: 20px;
+}
+.contact__medias img {
+  padding-right: 24px;
+}
 .model {
     padding: 7vw 121px 13vw;
     background-position: 90% 100%;
