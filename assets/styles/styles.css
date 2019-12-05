@@ -1100,6 +1100,12 @@ position: relative;
     font-size: 10px;
   }
 }
+@media only screen and (max-width:375px){
+  .header__fixed--button {
+    padding: 9px 11px;
+    font-size: 9px;
+  }
+}
 .header__iata{
   padding: 0px 20px;
   height: 30px;
@@ -1342,6 +1348,11 @@ img.header__column--text.fixed {
 @media only screen and (max-width:768px){
 img.header__column--text.fixed {
     height: 59px;
+  }
+}
+@media only screen and (max-width:512px){
+img.header__column--text.fixed {
+    height: 46px;
   }
 }
 
@@ -2702,6 +2713,13 @@ margin: 20px 0px;
     font-size: 14px;
   }
 }
+@media only screen and (min-width:425px){
+  .location__view--btn{
+    font-size: 10px;
+    padding: 9px 27px;
+    margin: 4px 0px;
+  }
+}
 .location__wrapper {
         display: flex;
         margin-bottom: 20px;
@@ -2764,7 +2782,7 @@ margin: 20px 0px;
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
-    height: 34vh;
+    height: 40vh;
   }
 }
 
@@ -2873,23 +2891,23 @@ color: #FFFFFF;
 
 @media only screen and (max-width:768px){
   .location__wrapper--link-bottom p  {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 @media only screen and (max-width:640px){
   .location__wrapper--link-bottom p  {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 25px;
+    /* line-height: 50px; */
   }
 }
 @media only screen and (max-width:470px){
   .location__wrapper--link-bottom p  {
-    font-size: 25px;
+    font-size: 19px;
   }
 }
 @media only screen and (max-width:375px){
   .location__wrapper--link-bottom p  {
-    font-size: 22px;
+    font-size: 17px;
   }
 }
 
@@ -3962,6 +3980,12 @@ color: #1D3B2D;
       margin: 40px 0px;
       /* height: 60vh; */
 }
+@media only screen and (max-width:356px){
+  .faq__main {
+    padding: 2.5vw 7vw 260px;
+
+  }
+}
 .faq__minus {
         rotate: 90deg;
     }
@@ -3977,6 +4001,13 @@ color: #1D3B2D;
       align-items: center;
       margin: 40px 0px;
     }
+
+    @media only screen and (max-width:768px){
+      .faq__body--container {
+        flex-direction: column;
+      }
+    }
+
     .faq__body--container > h5 {
       text-align: center;
       font-family: Avenir LT Std;
@@ -3991,13 +4022,43 @@ color: #1D3B2D;
       border-left: 1px solid #C4C4C4;
       padding-left: 40px;
     }
-
+    @media only screen and (max-width:768px){
+      .faq__body--container > div {
+        width: auto;
+      }
+    }
+    @media only screen and (max-width:467px){
+      .faq__body--container > div {
+        padding-left: 27px;
+      }
+    }
     .faq__hero {
       font-family: Avenir LT Std;
       font-size: 50px;
       line-height: 60px;
       letter-spacing: 0.02em;
       color: #8DC63F;
+      
+    }
+    @media only screen and (max-width:768px){
+      .faq__hero {
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+    @media only screen and (max-width:467px){
+      .faq__hero {
+        font-size: 31px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    @media only screen and (max-width:467px){
+      .faq__hero {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+      }
     }
 
 .faq__question {
@@ -4054,7 +4115,11 @@ color: #1D3B2D;
             cursor: pointer;
             
         }
-
+@media only screen and (max-width:470px){
+  .faq__question--plus {
+    margin-left:9px;
+  }
+}
 .faq__answer {
         position: relative;
         display: none;
@@ -4065,6 +4130,14 @@ color: #1D3B2D;
         color: #5C5C5C;
         width: 100%;
         font-weight: 300;
+        font-size: 16px;
+        text-align: justify;
+    }
+@media only screen and (max-width:512px){
+      .faq__answer {
+        font-size: 14px;
+        padding: 20px;
+      }
     }
 .faq__display {
         display: block;
@@ -4203,7 +4276,7 @@ color: #1D3B2D;
         margin-top: 40px;
     }
 
-@media only screen and (max-width:512px){
+@media only screen and (max-width:600px){
   .footer__main {
     flex-direction: column;
   }
@@ -4212,7 +4285,16 @@ color: #1D3B2D;
     flex-direction: column;
   }
 }
-
+@media only screen and (max-width:512px){
+  .footer__main {
+    padding-top: 0px;
+    margin-top: 20px;
+  }
+  .footer__main>div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 .footer__main--link {
@@ -4241,7 +4323,7 @@ color: #FFFFFF;
 }
 @media only screen and (max-width:512px){
   .footer__main--link:link, .footer__main--link:visited {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 32px;
     padding-top: 0px;
   }
@@ -4278,7 +4360,7 @@ color: #FFFFFF;
   transform: translateX(-74px);
 
 }
-@media only screen and (max-width:512px){
+@media only screen and (max-width:600px){
   .footer__main--right::before {
     transform: translateX(-15px);
   }
@@ -4325,6 +4407,11 @@ color: #FFFFFF;
     
 
 }
+@media only screen and (max-width:425px){
+  .loc {
+    flex-direction: column;
+  }
+}
 
 .loc__bg {
         height: 80vh;
@@ -4341,6 +4428,17 @@ color: #FFFFFF;
         color:black;
         transform:translateY(-30%);
     }
+@media only screen and (max-width:500px){
+  .loc__left {
+    width: 50%;
+  }
+}
+@media only screen and (max-width:425px){
+  .loc__left {
+    width: 80%;
+    height: 70vh;
+  }
+}
 
 .loc__left--top {
             background: rgba(39, 31, 31, 0.85);
@@ -4358,7 +4456,11 @@ color: #FFFFFF;
                 color: #8DC63F;
                 padding-bottom: 6px;
             }
-
+@media only screen and (max-width:425px){
+  .loc__left--top h5 {
+    font-size: 19px;
+  }
+}
 .loc__left--bottom {
             display: flex;
             align-items: flex-start;
@@ -4373,21 +4475,59 @@ color: #FFFFFF;
                 line-height: 26px;
                 color: #000000;
             }
-
-
+@media only screen and (max-width:530px){
+  .loc__left--bottom h6 {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width:425px){
+  .loc__left--bottom h6 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width:375px){
+  .loc__left--bottom h6 {
+    font-size: 14px;
+  }
+}
 
 .loc__left--bottom > div {
                 display: flex;
                 padding: 2vw 0;
-                height:60px;
+                /* height:60px; */
                 justify-content:space-between;
                 align-items:flex-start;
-                width:120%;
+                /* width:120%; */
             }
+.loc__left--bottom-socials img {
+  padding-right: 20px;
+}         
+@media only screen and (max-width:768px){
+  .loc__left--bottom-socials img {
+    height: 32px;
+  }
+}
+@media only screen and (max-width:425px){
+  .loc__left--bottom-socials img {
+    height: 22px;
+  }
+}
+@media only screen and (max-width:375px){
+  .loc__left--bottom-socials img {
+    height: 16px;
+  }
+}
 
 .loc__left--bottom-souv img {
+                position: absolute;
+                right: 0;
                 height: 240px;
             }
+@media only screen and (max-width:768px){
+  .loc__left--bottom-souv img {
+    height: 130px;
+  }
+}
 
 .loc__left--inner {
             /* margin-right: 2vw; */
@@ -4406,6 +4546,11 @@ color: #FFFFFF;
             justify-content: space-between;
     
     }
+@media only screen and (max-width:624px){
+  .loc__left--inner h2{
+    font-size: 1.1em;
+  }
+}
 
 .loc__left--inner p {
                 font-family: Avenir LT Std;
@@ -4420,6 +4565,7 @@ color: #FFFFFF;
 
 .loc__left--inner span {
                 margin: 20px 0px 10px 0px;
+                
             }
 
 .loc__right {
@@ -4427,25 +4573,54 @@ color: #FFFFFF;
         position: relative;
         width:40%;
         margin:0 auto;
-        height: 80vh;
+        /* height: 80vh; */
         color:black;
         padding: 4vw 0;
      }
-
+@media only screen and (max-width:624px){
+      .loc__right  {
+        width: 100%;
+        padding: 0 10vw;
+        padding-bottom: 4vw;
+      }
+    }
 .loc__right h4 {
             font-family: Avenir LT Std;
             font-size: 34px;
             line-height: 41px;
             color: #000000;
         }
-
+@media only screen and (max-width:624px){
+  .loc__right h4 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width:375px){
+  .loc__right h4 {
+    font-size: 22px;
+  }
+}
 .loc__right p {
             font-family: Avenir LT Std;
             font-size: 15px;
             line-height: 18px;
             color: #000000;
         }
-
+@media only screen and (max-width:1024px){
+  .loc__right p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width:500px){
+  .loc__right p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:375px){
+  .loc__right p {
+    font-size: 11px;
+  }
+}
 .loc__green {
         font-family: Avenir LT Std;
         font-size: 9px;
@@ -4681,6 +4856,7 @@ color: #FFFFFF;
             font-size: 19px;
             line-height: 23px;
             font-weight: bold;
+            text-align: center;
 
         }
 .model__text {
