@@ -4871,6 +4871,12 @@ color: #FFFFFF;
     padding: 0px 70px;
   }
 }
+@media only screen and (max-width:440px){
+  .loc {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+}
 
 
 .loc__bg {
@@ -4896,12 +4902,7 @@ color: #FFFFFF;
       }
     }
 
-@media only screen and (max-width:425px){
-  .loc__left {
-    width: 80%;
-    height: 70vh;
-  }
-}
+
 
 .loc__left--top {
             background: rgba(39, 31, 31, 0.85);
@@ -4996,7 +4997,7 @@ color: #FFFFFF;
 }
 @media only screen and (max-width:375px){
   .loc__left--bottom-socials img {
-    height: 16px;
+    height: 18px;
   }
 }
 
