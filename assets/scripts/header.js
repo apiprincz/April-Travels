@@ -1,3 +1,4 @@
+
 let togglerIcon = document.querySelectorAll("img.header__column--toggler");
 let togglerMenu = document.querySelector(".header__menu");
 let modalCloseIcon = document.querySelectorAll(".header__menu--close");
@@ -24,22 +25,30 @@ for (let x = 0; x < modalCloseIcon.length; x++) {
 
     })
     
+    
 }
 bgInactive.addEventListener("click", function () {
     togglerMenu.classList.remove("header__menu--show");
     bgInactive.classList.remove("bg__active");
 })
-
 $(document).ready(function(){
     $(".owlslides").owlCarousel({
         autoplay:true,
         autoplayTimeout:5000,
         loop:true,
+        items: 6,
         responsive:{
             0:{
-                items:1
+                items:2
+            },
+            500:{
+                items:2
+            },
+            768:{
+                items:3
             }
         }
     });
     
   });
+
