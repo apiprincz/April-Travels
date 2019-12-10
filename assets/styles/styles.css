@@ -2930,7 +2930,7 @@ bottom: 0px;
   }
   @media only screen and (max-width:425px){
   .location__hero--text {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   }
 .location__location .location__hero--text {
@@ -2957,6 +2957,12 @@ background: none;
   .location__sub--text {
     font-size: 14px;
     line-height: 34px;
+  }
+}
+@media only screen and (max-width:425px){
+  .location__sub--text {
+    font-size: 13px;
+    line-height: 27px;
   }
 }
 .location__view--btn {
@@ -4459,6 +4465,11 @@ img.onboard__max--img {
         flex-direction: column;
       }
     }
+    @media only screen and (max-width:425px){
+      .faq__body--container {
+        padding: 24px 0px;
+      }
+    }
 
     .faq__body--container > h5 {
       text-align: center;
@@ -4898,7 +4909,17 @@ color: #FFFFFF;
       .loc__left {
         margin: 0px;
         width: 100%;
-        height: 95vh;
+        height: 74vh;
+      }
+    }
+@media only screen and (max-width:425px){
+      .loc__left {
+        height: 65vh;
+      }
+    }
+@media only screen and (max-width:375px){
+      .loc__left {
+        height: 58vh;
       }
     }
 
@@ -4912,11 +4933,21 @@ color: #FFFFFF;
             display: flex;
             flex-direction: column;
         }
-@media only screen and (max-width:960px){
+/* @media only screen and (max-width:960px){
           .loc__left--top {
-            height: 60%;
+            /* height: 60%; 
     }
 }
+@media only screen and (max-width:624px){
+          .loc__left--top {
+            /* height: 54%; 
+    }
+}
+@media only screen and (max-width:512px){
+          .loc__left--top {
+            height: 47%;
+    }
+} */
 
 .loc__left--top h5 {
                 font-family: Avenir LT Std;
@@ -5037,6 +5068,11 @@ color: #FFFFFF;
     font-size: 1.1em;
   }
 }
+@media only screen and (max-width:425px){
+  .loc__left--inner h2{
+    font-size: 0.9em;
+  }
+}
 
 .loc__left--inner p {
                 font-family: Avenir LT Std;
@@ -5134,13 +5170,14 @@ color: #FFFFFF;
         height: 80vh;
         background: url(../../assets/images/travelbg.png);
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
 .contact {
 
         z-index: 4;
-        width: 74%;
-        height: 80vh;
+        /* width: 74%; */
+        /* height: 80vh; */
         margin: 0 auto;
         border-radius: 10px;
         background-color: #f0f0f0;
@@ -5155,7 +5192,12 @@ color: #FFFFFF;
 
 .contact {
   transform: translateY(-85px);
-  width: 86%;
+}
+}
+@media only screen and (max-width:425px){
+
+.contact {
+  flex-direction: column;
 }
 }
 
@@ -5189,13 +5231,44 @@ color: #FFFFFF;
     font-size: 16px;
   }
 }
+@media only screen and (max-width:512px){
+  .contact__bg h1 {
+    font-size: 36px;
+  }
+  
+}
+@media only screen and (max-width:425px){
+  .contact__bg h1 {
+    font-size: 33px;
+  }
+  .contact__desc {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:350px){
+  .contact__desc {
+    font-size: 11px;
+  }
+}
 
 .contact__bg--2 {
           background: url(../../assets/images/contactbg2.png);
           background-size: cover;
           background-position: 10% 20%;
+          margin: 0 auto;
+          padding: 1px 11vw 3vw;
           
         }
+@media only screen and (max-width:600px){
+          .contact__bg--2 {
+            padding: 1px 7vw 3vw;
+    }
+}
+@media only screen and (max-width:425px){
+          .contact__bg--2 {
+            padding: 1px 3vw 3vw;
+    }
+}
 .contact__form {
         width: 60%;
         padding: 6vh;
@@ -5209,13 +5282,19 @@ color: #FFFFFF;
     padding: 3vw 6vw;
   }
 }
+@media only screen and (max-width:425px){
+  .contact__form{
+   width: 100%;
+}
+}
 .contact__form input {
             background: #D8D8D8;
-            height: 6vh;
+            /* height: 6vh; */
         }
 
 .contact__form textarea {
             background: #D8D8D8;
+            resize: none;
 
         }
 
@@ -5234,16 +5313,42 @@ color: #FFFFFF;
 .contact__form button {
             width: 200px;
         }
-
+@media only screen and (max-width:512px){
+          .contact__form button{
+           width: 180px;
+           padding: 16px 20px
+    }
+}
+@media only screen and (max-width:456px){
+          .contact__form button{
+           width: 163px;
+    }
+}
+@media only screen and (max-width:460px){
+  .contact__btn {
+  padding: 13px 25px;
+  }
+}
 .contact__info {
         background: #1D3B2D;
-        padding: 10vw 10vw 2vw 4vw;
+        padding: 10vw 3vw 2vw 4vw;
     }
 @media only screen and (max-width:640px){
   .contact__info{
     padding: 10vw 5vw 2vw 4vw;
   }
 }
+@media only screen and (max-width:512px){
+  .contact__info{
+    padding: 10vw 2vw 2vw 2vw;
+  }
+}
+@media only screen and (max-width:425px){
+  .contact__info{
+    padding: 10vw 2vw 2vw 7vw;
+  }
+}
+
 .contact__info > div {
             display: flex;
             align-items:center;
@@ -5261,18 +5366,43 @@ color: #FFFFFF;
     font-size: 12px;
   }
 }
+@media only screen and (max-width:512px){
+  .contact__info > div {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:425px){
+  .contact__info > div {
+    font-size: 12px;
+  }
+}
 .contact__email::before {
   content: url(../../assets/images/mailicon.png);
   padding-right: 20px;
 
 }
+@media only screen and (max-width:624px){
+  .contact__email::before{
+    padding-right: 10px;
+  }
+}
 .contact__phone::before {
   content: url(../../assets/images/callicon.png);
   padding-right: 20px;
 }
+@media only screen and (max-width:624px){
+  .contact__phone::before{
+    padding-right: 10px;
+  }
+}
 .contact__location::before {
   content: url(../../assets/images/geoicon.png);
   padding-right: 20px;
+}
+@media only screen and (max-width:624px){
+  .contact__location::before{
+    padding-right: 10px;
+  }
 }
 .contact__sub--desc{
   line-height: 17px; 
@@ -5286,6 +5416,7 @@ color: #FFFFFF;
     font-size: 12px;
   }
 }
+
 .contact__medias {
   display: flex; 
   justify-content: space-between; 
@@ -5301,6 +5432,24 @@ color: #FFFFFF;
     background-size: 35vw;
     background-repeat: no-repeat;
     font-family: 'Avenir LT std';
+}
+@media only screen and (max-width:1024px){
+  .model {
+    padding: 7vw 98px 13vw;
+
+  }
+}
+@media only screen and (max-width:512px){
+  .model {
+    padding: 7vw 40px 13vw;
+
+  }
+}
+@media only screen and (max-width:375px){
+  .model {
+    padding: 7vw 30px 13vw;
+
+  }
 }
 
 .model__bg {
@@ -5318,7 +5467,7 @@ color: #FFFFFF;
     }
 
 .model__block {
-        width: 90vw;
+        /* width: 90vw; */
         margin-top: 18vw;
         margin-left: -5vw;
         padding-right: 5vw;
@@ -5352,6 +5501,11 @@ color: #FFFFFF;
             text-align: center;
 
         }
+@media only screen and (max-width:864px){
+  .model__block h5 {
+    font-size: 16px;
+  }
+}
 .model__text {
   font-family: Avenir LT Std;
   font-style: normal;
@@ -5359,6 +5513,16 @@ color: #FFFFFF;
   font-size: 20px;
   line-height: 30px;
   color: #1D3B2D;
+}
+@media only screen and (max-width:624px){
+  .model__text {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width:512px){
+  .model__text {
+    font-size: 15px;
+  }
 }
 
 .model__block--icon {
@@ -5422,6 +5586,8 @@ color: #FFFFFF;
             @media only screen and (max-width:768px){
               .model__block--top-container {
                max-width: 100%;
+               min-height: auto;
+               padding: 5vw;
               }
             }
 .model__block--bottom {
