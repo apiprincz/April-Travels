@@ -1015,7 +1015,7 @@ input, textarea {
       width: 100%;
       background: url(../../assets/images/girl.png);
       background-repeat: no-repeat;
-      background-position: 60% 50%  ;
+      background-position: 80% 70%;
         background-size:cover;
 }
 .slide2 {
@@ -1043,8 +1043,9 @@ input, textarea {
 }
 .owl-theme .owl-nav.disabled+.owl-dots{
   margin-top: -26px;
-z-index: 200;
-position: relative;
+  z-index: 200;
+  position: relative;
+  
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -1052,22 +1053,15 @@ position: relative;
 }
 
 
-/* .header__slides {
-  position: absolute;
-  width: 100%;
-  height: 60vh;
-} */
 
 .header__top--fixed {
         opacity: 0;
-        /* display: none; */
         position: fixed;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 6px 50px;
-        /* background: white; */
         z-index: -100;
        transition: opacity 0.3s;
        top: 0;
@@ -1094,7 +1088,7 @@ position: relative;
       opacity: 1;
       background: white;
       z-index: 100;
-      /* display: block; */
+
 }
 
 .header__top--fixed > div {
@@ -1185,12 +1179,15 @@ img.header__nanta {
   }
   @media only screen and (max-width:512px){
     img.header__nanta {
-      height: 46px;
+      height: 45px;
+      position: absolute;
+      right: 0;
+      top: 20px;
     }
   }
-  @media only screen and (max-width:512px){
+  @media only screen and (max-width:375px){
     img.header__nanta {
-      display: none;
+      height: 35px;
     }
   }
 
@@ -1198,7 +1195,6 @@ img.header__nanta {
 
 .header__button {
         padding: 10px 20px;
-        /* position: relative; */
         background: #FFFFFF;
         border-radius: 5px;
         color: #2BB673;
@@ -1224,8 +1220,7 @@ img.header__nanta {
         height: 100%;
         background: linear-gradient(48.66deg, rgba(29, 59, 45, 0.66) 10.34%, rgba(59, 183, 143, 0.80) 70.69%); 
         padding:30px;
-        /* background: linear-gradient(48.66deg, rgba(29, 59, 45, 0.66) 17.34%, rgba(59, 183, 143, 0.80) 52.69%); */
-        
+          
     }
  
   @media only screen and (min-width:1500px){
@@ -1330,7 +1325,6 @@ img.header__column--text {
           }
 @media only screen and (max-width:1024px){
   img.header__column--text {
-    /* width: 256px; */
     height: 37px;
   }
 }
@@ -1353,7 +1347,6 @@ img.header__column--text {
 
 @media only screen and (max-width:512px){
   img.header__column--text {
-    /* width: 139px; */
     height: 36px;
   }
 }
@@ -1361,7 +1354,6 @@ img.header__column--text {
 @media only screen and (max-width:425px){
   img.header__column--text {
     width: 168px;
-    /* height: 28px; */
   }
 }
 @media only screen and (max-width:375px){
@@ -3455,7 +3447,7 @@ padding: 30px 0px;
 }
 
 .owl__image img {
-    width: 80%;
+    height: 87px;
 
 }
 
@@ -4352,7 +4344,7 @@ padding: 10px 0px;
 }
 
 .onboard__card--wrapper-flex .block .ownblock {
-  padding-bottom: 31px;
+  padding-bottom: 46px;
 }
 @media only screen and (max-width:600px){
   .onboard__card--wrapper-flex .block .ownblock {
@@ -4366,7 +4358,7 @@ padding: 10px 0px;
   font-size: 22px;
   
 }
-@media only screen and (max-width:7230px){
+@media only screen and (max-width:230px){
   .onboard__card--wrapper-flex .block .ownblock h4{
     font-size: 20px;
     
@@ -5465,7 +5457,11 @@ color: #FFFFFF;
         font-size: 34px;
         line-height: 41px;
     }
-
+@media only screen and (max-width:512px){
+  .model h2 {
+    font-size: 26px;
+  }
+}
 .model__block {
         /* width: 90vw; */
         margin-top: 18vw;

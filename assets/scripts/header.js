@@ -27,25 +27,49 @@ for (let x = 0; x < modalCloseIcon.length; x++) {
     
     
 }
-bgInactive.addEventListener("click", function () {
-    togglerMenu.classList.remove("header__menu--show");
-    bgInactive.classList.remove("bg__active");
-})
+// bgInactive.addEventListener("click", function () {
+//     togglerMenu.classList.remove("header__menu--show");
+//     bgInactive.classList.remove("bg__active");
+// })
 $(document).ready(function(){
     $(".owlslides").owlCarousel({
+        autoplay:true,
+        autoplayTimeout:5000,
+        loop:true,
+        items: 1,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+    
+  });
+$(document).ready(function(){
+    $(".owllogos").owlCarousel({
         autoplay:true,
         autoplayTimeout:5000,
         loop:true,
         items: 6,
         responsive:{
             0:{
+                items:1
+            },
+            475:{
                 items:2
             },
-            500:{
-                items:2
-            },
-            768:{
+            640:{
                 items:3
+            },
+            
+            900:{
+                items:4,
+            },
+            1100:{
+                items:5,
+            },
+            1500:{
+                items:6
             }
         }
     });
