@@ -353,6 +353,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: Avenir LT Std;
   }
   
   html {
@@ -396,11 +397,11 @@
       }
   
   .side-navigation__bar{
-          width: 200px;
+          width: 140px;
           background:#8DC63F;
           height: 100vh;
           padding: 13px 0;
-          position: relative;
+          position: fixed;
       }
   
   .side-navigation__lower-content{
@@ -416,12 +417,13 @@
   
   .side-navigation__menu-icon--small{
           width: 17px;
+          padding-bottom: 10px;
       }
   
   .side-navigation__menu-link{
           text-decoration: none;
           background: transparent;
-          padding: 30px 5px;
+          padding: 10px 5px;
           border-radius: 2px;
           margin: 0 8px;
           display: flex;
@@ -432,8 +434,9 @@
       }
    .side-navigation__menu-link > div {
             color: white;
+            line-height: 20px;
    }
-
+   
   .side-navigation__menu-link-container{
           /* background: #0E1F43; */
           /* height: calc(100vh - 65px); */
@@ -447,7 +450,7 @@
       }
   
   .side-navigation__menu-link--active{
-          background: #15295A;
+          /* background: #15295A; */
       }
   
   .side-navigation__group-icon-container{
@@ -465,7 +468,7 @@
           padding: 60px 0px;
       }
       .side-navigation__group-icon-container > div a {
-          padding: 7vh 0px;
+          padding: 2vh 0px;
       }
   
   .side-navigation__tab-link:link, .side-navigation__tab-link:visited, .side-navigation__sub:link, .side-navigation__sub:visited{
@@ -694,8 +697,11 @@
   
  
   
-    .main__body {
+    .main-body {
         height: 100vh;
+        position: absolute;
+        left: 140px;
+        width: calc(100% - 140px);
     }
   
   .main-body__content{
@@ -780,9 +786,8 @@
         transform:translateY(-10px)
     }
     .main-body__content--container > div span {
-        transform: translateX(50%);
         position: absolute;
-        /* right: 50%; */
+        left: 80px;
         font-family: "Avenir LT Std";
         font-size: 18px;
         line-height: 22px;
@@ -847,3 +852,135 @@
       position: absolute;
       bottom: 0px;
   }
+
+  /*deals admin page*/
+
+.deal__block--container {
+    position: absolute;
+    width: calc(100vw - 160px);
+    padding: 28px 65px;
+    background: #E5E5E5;
+  }
+.deal__block--container h2 {
+  font-family: Avenir LT Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.deals__container {
+  margin-top: 22px;
+  padding: 67px 40px;
+  background: white;
+  
+}
+.deals__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.deal__btn {
+  padding: 16px 32px;
+  background: #2BB673;
+  border-radius: 10px;
+  font-family: Avenir LT Std;
+  font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+border: none;
+}
+.deals__row p {
+  font-family: Avenir LT Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+}
+.title--block {
+  padding: 48px 0px 15px 0px;
+  width: 71%;
+}
+.title--block p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.title--block p:nth-child(2){
+  padding-left: 160px;
+}
+.deal--block {
+  align-items: center;
+  margin-bottom: 25px;
+  background: #F2F3F7;
+  border: 0.7px solid rgba(0, 0, 0, 0.52);
+}
+.deal--block img {
+  width: 190px;
+}
+.deal--block p {
+  font-family: Avenir LT Std;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.deal__discount {
+  font-weight: 750;
+}
+.deal__action--container {
+  padding-right: 27px;
+}
+.deal__action--container button {
+  font-family: Avenir LT Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border: none;
+
+}
+.edit__btn {
+  padding: 10px 32px 9px 27px;
+  background: #4A90E2;
+
+}
+.delete__btn {
+  padding: 10px 20px 9px;
+  background: #F25858;
+
+}
+
+.deals__page--index {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 32px 40px;
+}
+.deals__page--index a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  font-family: Avenir LT Std;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+color: #5C5C5C;
+text-decoration: none;
+
+}
+.deals__page--index a:first-child span::before {
+  content: url(../../assets/backendImages/previcon.png);
+  vertical-align: middle;
+}
+.deals__page--index a:last-child span::after {
+  content: url(../../assets/backendImages/nexticon.png);
+  vertical-align: middle;
+}
