@@ -1068,12 +1068,12 @@ input, textarea {
 }
 @media only screen and (max-width:512px){
   .header__top--fixed {
-    padding: 20px;
+    padding: 20px 7vw;
   }
 }
 @media only screen and (max-width:375px){
   .header__top--fixed {
-    padding: 12px;
+    padding: 12px 7vw;
   }
 }
 
@@ -1149,21 +1149,11 @@ input, textarea {
   .header__top--flex-right,.header__top--fixed-right {
     position: relative;
     top: 0px;
+    right: 0px;
 
   }
 }
-@media only screen and (max-width:425px){
-  .header__top--flex-right,.header__top--fixed-right {
-    position: relative;
-    right: 25px;
-  }
-}
-@media only screen and (max-width:375px){
-  .header__top--flex-right, .header__top--fixed-right{
-    position: relative;
-    right: 12px;
-  }
-}
+
 img.header__iata {
   height: 40px;
 }
@@ -1181,8 +1171,13 @@ img.header__nanta {
     img.header__nanta {
       height: 45px;
       position: absolute;
-      right: 0;
+      right: 20px;
       top: 20px;
+    }
+  }
+  @media only screen and (max-width:425px){
+    img.header__nanta {
+      right: 0;
     }
   }
   @media only screen and (max-width:375px){
@@ -1425,9 +1420,10 @@ img.header__column--text.fixed {
 @media only screen and (max-width:512px){
   .header__body {
     width:100% ;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 }
+
 
 .header__body--hero {
             margin: 66px 0px 16px 0px;
@@ -1606,12 +1602,13 @@ img.header__column--text.fixed {
   .header__form--container{
     width: 100%;
     padding: 3px 0px;
+    margin-bottom: 5px;
   }
 }
 @media only screen and (max-width:425px){
   .header__form--container{
     padding:0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width:512px){
@@ -1674,6 +1671,7 @@ img.header__column--text.fixed {
   .header__form--container-body {
     margin: 0px;
     padding: 3px 9px;
+    height: 47px;
   }
 }
 @media only screen and (max-width:425px){
@@ -1992,11 +1990,11 @@ img.header__column--text.fixed {
     margin:8px 0px 10px 0px;
   }
 }
-@media only screen and (max-width:400px){
+/* @media only screen and (max-width:400px){
   .header__form--radio {
     margin:4px 0px 4px 0px;
   }
-}
+} */
 
 .header__form--radio .extra__padding {
     padding: 0px 20px;
@@ -2344,7 +2342,7 @@ a.header__menu--link {
 .header__menu--container:hover {
   padding: 30px 20px;
   color: #2BB673;
-  
+  background: #D8D8D8;
 }
 .header__menu--container img {
   width: 20px;
@@ -3426,6 +3424,11 @@ padding: 30px 0px;
     font-size: 33px;
   }
 }
+@media only screen and (max-width:425px){
+  .partners__body h5 {
+    font-size: 22px;
+  }
+}
 
 .partners__body > div{
   display: flex;
@@ -4358,19 +4361,19 @@ padding: 10px 0px;
   font-size: 22px;
   
 }
-@media only screen and (max-width:230px){
-  .onboard__card--wrapper-flex .block .ownblock h4{
-    font-size: 20px;
-    
-  }
-}
+
 @media only screen and (max-width:600px){
   .onboard__card--wrapper-flex .block .ownblock h4{
     font-size: 23px;
     
   }
 }
-
+@media only screen and (max-width:375px){
+  .onboard__card--wrapper-flex .block .ownblock h4{
+    font-size: 18px;
+    
+  }
+}
 
 .onboard__card--wrapper-flex .block .ownblock .onboard__card--wrapper-text {
   /* transform: translateY(18px); */
@@ -4687,6 +4690,11 @@ img.onboard__max--img {
     font-size: 24px;
   }
 }
+@media only screen and (max-width:425px){
+  .footer__overlay h3 {
+    font-size: 22px;
+  }
+}
 
 .footer__overlay h4 {
             font-family: Arial, Helvetica, sans-serif;
@@ -4694,7 +4702,11 @@ img.onboard__max--img {
             line-height: 19px;
             color: #1D3B2D;
         }
-
+@media only screen and (max-width:425px){
+          .footer__overlay h4 {
+            font-size: 14px;
+          }
+        }
 .footer__overlay button{
             padding: 10px 50px;
             font-family: 'Avenir LT Std';
@@ -4711,7 +4723,7 @@ img.onboard__max--img {
   }
   .footer__overlay--text h4::before {
     content: url(../../assets/images/footerlg.png);
-    transform: translateY();
+    vertical-align: middle;
   }
   .footer__overlay--logo {
     display: none;
