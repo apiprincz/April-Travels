@@ -2380,8 +2380,9 @@ a.header__menu--link {
 }
 
 .header__menu--container.active {
-  color: #2BB673;
-  /* padding-left: 20px; */
+  color: #ffffff;
+  background: #2BB673;
+
   font-size: 16px;
 
 }
@@ -2396,7 +2397,7 @@ a.header__menu--link {
 }
 
 .header__menu--container:hover {
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
   color: #2BB673;
   background: #D8D8D8;
 }
