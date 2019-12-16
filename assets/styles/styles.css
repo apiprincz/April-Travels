@@ -1383,7 +1383,6 @@ img.header__column--text {
 }
 @media only screen and (min-width:1500px){
   img.header__column--logo, img.header__column--text {
-    width: 46px;
     height: 3.5vh;
   }
 }
@@ -2357,10 +2356,13 @@ color: #1D3B2D;
     font-size: 11px;
   }
 }
+.header__menu--wrapper a {
+  border-bottom:1px solid #5C5C5C ;
+}
 .header__menu img {
   width: 40px;
   height: 40px;
-  /* margin-right: 20px; */
+  
 }
 
 
