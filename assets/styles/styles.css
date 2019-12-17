@@ -2269,16 +2269,13 @@ img.header__column--text.fixed {
 
 
 .header__menu {
-  /* position: fixed; */
   width: 55%;
   top: 0;
-  /* left: -54%; */
   height: 100vh;
-  /* padding: 4%; */
   background: url(../../assets/images/topmenubg.png), linear-gradient(#ffffff, #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
-  transition: left .5s;
+  transition: left .7s;
 }
 
  
