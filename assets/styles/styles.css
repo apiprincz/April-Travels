@@ -2383,7 +2383,7 @@ a.header__menu--link {
 
 .header__menu--container.active {
   color: #2BB673;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 @media only screen and (max-width:425px){
@@ -3049,6 +3049,9 @@ margin: 20px 0px;
         
 
     }
+.location__wrapper a {
+  cursor: pointer;
+}
 
 @media only screen and (max-width:640px){
       .location__wrapper{
@@ -4871,6 +4874,7 @@ color: #FFFFFF;
 
 .footer__main--right {
   display: flex;
+  cursor: pointer;
 }
 .footer__main--right h6 {
             font-size: 11px;
