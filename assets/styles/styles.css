@@ -2385,7 +2385,7 @@ a.header__menu--link {
 }
 @media only screen and (max-width:425px){
   .header__menu--container.active {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
