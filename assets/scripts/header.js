@@ -1,4 +1,3 @@
-
 let togglerIcon = document.querySelectorAll("img.header__column--toggler");
 let togglerMenu = document.querySelector(".header__menu");
 let modalCloseIcon = document.querySelectorAll(".header__menu--close");

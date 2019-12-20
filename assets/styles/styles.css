@@ -1731,6 +1731,65 @@ img.header__column--text.fixed {
     padding: 1px 9px;
   }
 }
+.header__drop {
+  position: relative;
+  display: inline-block;
+  /* overflow: auto; */
+
+}
+.header__drop select {
+  display: none;
+}
+
+.select-selected::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right:-36px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #5c5c5c transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active::after {
+  border-color: transparent transparent #5c5c5c transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  cursor: pointer;
+  color:#5C5C5C;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+}
+.select-selected.select-arrow-active {
+  color: #5C5C5C;
+}
+.select-items {
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.9);
+  top: 39px;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  width: 140%;
+}
+.select-hide{
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected{
+  background-color: white;
+}
+.select-items div:hover, .same-as-selected:hover{
+  background-color:rgba(0, 0,0, 0.4);
+  
+}
+
+
+
+
 .header__form--container-description {
                 font-family: 'Muli';
                 /* padding: 1vh; */
@@ -1935,6 +1994,7 @@ img.header__column--text.fixed {
   white-space: nowrap;
   font-weight: 500;
 }
+
 @media only screen and (max-width:1142px){
   .header__form--container-body-text.no__wrap {
   padding: 0px 16px 0px 8px; 
