@@ -2102,7 +2102,8 @@ img.header__column--text.fixed {
             font-size: 11px;
             line-height: 13px;
             letter-spacing: 2px;
-                }
+  }
+
 @media only screen and (min-width:1500px){
   .header__form--submit{
     font-size: 18px;
@@ -5738,6 +5739,51 @@ color: #FFFFFF;
 .model__block--bottom p {
                 color: #333333;
             }
-
-
+.contact_modal__content {
+  padding: 2vw 0vw;
+  text-align: center;
+}
+.input_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3vw 14vw;
+}
+@media only screen and (max-width:512px){
+  .input_section {
+   justify-content: center;
+   padding: 2vw 6vw;
+  }
+}
+.contact_modal__content h1 {
+  color:;
+}
+@media only screen and (max-width:512px){
+  .contact_modal__content h1{
+   font-size: 1.7em;
+  }
+}
+.input_section input {
+  width: 47%;
+  margin: 10px 0px;
+  border: 1px solid #C4C4C4;
+}
+@media only screen and (max-width:512px){
+  .input_section input {
+    width: 80%;
+  }
+}
+.contact_modal__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_modal__body a {
+  display: block;
+  padding: 14px 80px;
+  margin: 30px 0px;
+}
 
