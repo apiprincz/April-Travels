@@ -1184,10 +1184,23 @@ text-align: center;
 }
 
 /* login css */
+.main-body.login {
+  width: 100%;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+}
+.main-body__content.login {
+  background: white;
+  margin: 0 auto;
+  
+}
 .main-body__content > .login {
   color: white;
-  background: linear-gradient(179.73deg, #FF5E16 0.87%, #DC5418 205.93%);
+  background: #AEF849;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .main-body__content > .login >  .contact__form input {
   padding: 20px;
@@ -1200,5 +1213,10 @@ text-align: center;
 }
 .main-body__content > .login >  .contact__form > div button {
   font-size: 20px;
+  cursor: pointer;
 
+}
+.main-body__content > .login >  .contact__form > div a:hover {
+  display: block;
+  color: #DC5418;
 }
