@@ -3104,7 +3104,7 @@ margin: 20px 0px;
     }
 .location__wrapper > div  {
   width: 100%;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 10px 20px 0px;
 }
 @media only screen and (max-width:640px){
   .location__wrapper > div{
@@ -3124,11 +3124,14 @@ margin: 20px 0px;
 .location__loc--wrapper {
   display: flex;
   padding-bottom: 25px;
-  
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
 }
 .location__loc--wrapper > div {
   position: relative;
-  width: 100%;
+  width: 48%;
+  
 }
 
 .location__loc--wrapper > div img {

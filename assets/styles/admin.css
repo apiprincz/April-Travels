@@ -1120,3 +1120,65 @@ text-align: center;
   background: #F39C12;
   padding: 10px 12px;
 }
+
+/* Contactkjk starts here*/
+
+.main-body__content > .contact {
+  display: flex;
+  font-family: avenir LT Std;
+
+}
+.main-body__content > .contact form {
+  width:600px;
+  padding: 40px;
+
+}
+
+.main-body__content > .contact form input, textarea {
+  width: 100%;
+  margin: 6px 0px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+.main-body__content > .contact button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: green;
+  color: white;
+  margin: 20px 0px;
+  font-size: 14px;
+}
+.main-body__content > .contact > div {
+  padding: 100px 30px;
+  background: #1D3B2D;
+  color: white;
+  
+}
+
+.main-body__content > .contact > div > div {
+  padding-bottom: 18px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.main-body__content > .contact > div > .contact__email::before{
+  content: url(../../assets/images/mailicon.png);
+  padding-right: 20px;  
+}
+.main-body__content > .contact > div > .contact__phone::before{
+  content: url(../../assets/images/callicon.png);
+  padding-right: 20px;  
+}
+.main-body__content > .contact > div > .contact__location::before{
+  content: url(../../assets/images/geoicon.png);
+  padding-right: 20px;  
+}
+.main-body__content > .contact > div > div > a img {
+  margin-right: 20px;
+}
