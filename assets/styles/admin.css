@@ -1152,7 +1152,7 @@ text-align: center;
   margin: 20px 0px;
   font-size: 14px;
 }
-.main-body__content > .contact > div {
+.main-body__content > .xpad > div {
   padding: 100px 30px;
   background: #1D3B2D;
   color: white;
@@ -1181,4 +1181,24 @@ text-align: center;
 }
 .main-body__content > .contact > div > div > a img {
   margin-right: 20px;
+}
+
+/* login css */
+.main-body__content > .login {
+  color: white;
+  background: linear-gradient(179.73deg, #FF5E16 0.87%, #DC5418 205.93%);
+  border-radius: 10px;
+}
+.main-body__content > .login >  .contact__form input {
+  padding: 20px;
+  margin: 20px 0px;
+
+}
+.main-body__content > .login >  .contact__form label {
+ font-size: 20px;
+
+}
+.main-body__content > .login >  .contact__form > div button {
+  font-size: 20px;
+
 }
