@@ -1197,7 +1197,11 @@ text-align: center;
 }
 .main-body__content > .login {
   color: white;
-  background: #AEF849;
+  background: #1d3b2d;
+  background-image: url(../../assets/backendImages/loginbg.jpeg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: cover;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

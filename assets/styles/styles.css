@@ -1602,6 +1602,8 @@ img.header__column--text.fixed {
             /* padding: 0px 20px; */
 
         }
+
+
 @media only screen and (max-width:1334px){
 .header__form--container:first-child, .header__form--container:nth-child(2){
   width: 100%;
@@ -1611,7 +1613,6 @@ img.header__column--text.fixed {
   .header__form--container{
     width: 48%;
     flex-wrap: wrap;
-  
   }
 }
 @media only screen and (max-width:768px){
